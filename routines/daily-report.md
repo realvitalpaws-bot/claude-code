@@ -84,10 +84,15 @@ Format (fill real numbers, yesterday's date):
 *📊 VitalPaws Daily Report — <Mon DD, YYYY>*
 📖 _Story so far:_ <1-2 lines tying yesterday to the bigger picture>
 ━━━━━━━━━━━━━━━━━━━━━━━
-📈 *ADS* — Spend ₹<spend> (<▲/▼ vs yest>) | Meta rev ₹<rev> (ROAS <roas>) | <N> purchases
+📈 *ADS* — Spend ₹<spend> (<up/down vs yest>) | Meta rev ₹<rev> (ROAS <roas>) | <N> purchases
 🛒 Shopify ₹<rev> (<orders> orders) | 🎯 Blended <blended>x _(directional)_
 🏆 Best ads: 1) <ad> — <N> sales, ₹<cpa>, <roas>x  2) ...  ✅ Best CPA <ad> @ ₹<cpa>
 ⏰ Best hours (IST): <ranges>
+━━━━━━━━━━━━━━━━━━━━━━━
+🗂 *CRM INDEX* (catalogued + saved to memory)
+⭐ VIP watchlist: • <name> — ₹<value> — <dogs / story> ➡️ <next action>
+🆕 New customers logged today (<N>): • <name> — ₹<value> ...
+_All indexed in memory/customers.md (deduped by name)._
 ━━━━━━━━━━━━━━━━━━━━━━━
 🗣 *KEY UPDATES* — • ...
 🎬 *CONTENT* — • ...
@@ -96,7 +101,7 @@ Format (fill real numbers, yesterday's date):
 💸 *FINANCES* — • ...
 ━━━━━━━━━━━━━━━━━━━━━━━
 📺 *PROGRESS (episode recap)*
-• <Arc> <▲/▬/▼> — <one line>
+• <Arc> <up/flat/down> — <one line>
 _Where we are:_ <2-3 sentences toward the vision>
 ━━━━━━━━━━━━━━━━━━━━━━━
 ✅ *WHO NEEDS TO DO WHAT* — • <person> — <tasks>

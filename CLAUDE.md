@@ -6,8 +6,14 @@ This repo doubles as persistent memory for a daily Slack summarization routine o
 the `thepurepaws` workspace. The execution environment is ephemeral, so committed
 files are the only durable memory between runs.
 
-**At the start of any session that involves Slack context, read `slack-digests/MEMORY.md`**
-to load the rolling memory of recent days. Per-day full digests are in `slack-digests/YYYY-MM-DD.md`.
+**At the start of any session that involves Slack context, load the memory:**
+read `slack-digests/MEMORY.md` (rolling recap), the latest `slack-digests/YYYY-MM-DD.md`,
+and the `memory/` files below. Each report is a continuing story that builds on the day before.
+
+- `memory/storylines.md` — ongoing arcs + company vision; advance each arc daily.
+- `memory/metrics-ledger.md` — one row per day (spend, ROAS, revenue, blended); used for trends.
+- `memory/customers.md` — CRM index of notable customers/VIPs (deduped by name).
+- `routines/daily-report.md` — the full, authoritative routine prompt. Follow it exactly.
 
 ### The daily routine (runs ~12 AM IST, ideally via a scheduled Claude session)
 1. Sweep all Slack channels (public + private, **no DMs**) for the last 24h.

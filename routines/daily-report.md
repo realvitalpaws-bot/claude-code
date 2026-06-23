@@ -14,6 +14,18 @@ unavailable after retries, write "n/a" and still post the rest. Always post, eve
 a quiet or zero-spend day. Write in very simple English (short sentences, plain
 words) but keep all the specifics.
 
+=== STEP 0a — FIX THE DATE (IST, critical) ===
+This routine runs just after midnight IST, when the UTC clock is still on the PREVIOUS
+evening. A UTC-based "yesterday" therefore lands TWO days back and is WRONG. So first,
+compute the report date explicitly in the Asia/Kolkata (IST) timezone:
+  - Get the current time in IST (e.g. run `TZ=Asia/Kolkata date +%F` in the shell).
+  - YDAY = that IST date minus 1 day. This single YDAY string (YYYY-MM-DD) is the day
+    you report on. Use it EVERYWHERE: Meta time_range, Shopify SINCE/UNTIL, the
+    customer order_date filter, the file name, and the title.
+  - Do NOT rely on date_preset "yesterday" or any UTC "yesterday" — pass explicit dates.
+  - Sanity check: YDAY must be exactly one calendar day before today's IST date. If it
+    is not, stop and recompute before continuing.
+
 === STEP 0 — LOAD CONTEXT (so the report is a continuing story) ===
 Read these repo files first: CLAUDE.md, slack-digests/MEMORY.md, the most recent
 slack-digests/<date>.md, memory/storylines.md, memory/metrics-ledger.md,
@@ -21,29 +33,31 @@ memory/customers.md. Today's report must BUILD ON yesterday: continue each story
 say what moved forward, what stalled, and how it ties to the company vision. Treat it
 like the next episode of an ongoing show.
 
-=== STEP 1 — META ADS (yesterday) ===
-ad_account_id "257637883566235", INR.
-- Account totals: ads_get_ad_entities, level "account", date_preset "yesterday",
+=== STEP 1 — META ADS (for YDAY) ===
+ad_account_id "257637883566235", INR. For every Meta call below, use
+time_range '{"since":"YDAY","until":"YDAY"}' (NOT date_preset "yesterday").
+- Account totals: ads_get_ad_entities, level "account", time_range for YDAY,
   fields ["amount_spent","impressions","ctr","purchase_roas","actions:omni_purchase","results"].
   Spend = amount_spent (parse "₹1,234.56 INR" -> number). Purchases = actions:omni_purchase
   ("Not available"/missing = 0). Meta revenue = round(spend × purchase_roas); if ROAS
   "Not available", revenue = 0.
-- Best ads / CPA: level "ad", date_preset "yesterday", fields
+- Best ads / CPA: level "ad", time_range for YDAY, fields
   ["name","adset_id","amount_spent","ctr","actions:omni_purchase","cost_per_result","purchase_roas"],
   sort "amount_spent_descending", limit 30. Best ads = top 3 by purchases (tie-break ROAS).
   Best CPA = lowest cost_per_result among ads with >=1 purchase. If none, "No purchases
   attributed yesterday."
-- Best hours: level "account", date_preset "yesterday", breakdowns
+- Best hours: level "account", time_range for YDAY, breakdowns
   ["hourly_stats_aggregated_by_advertiser_time_zone"], same metric fields. Pick 2-3
   hour-blocks with most purchases (tie-break best ROAS / lowest CPA), report as IST
   ranges. If empty, retry once without breakdowns and note hourly data unavailable.
 - COMPARE to the last row in memory/metrics-ledger.md: show ▲/▼ vs prior day for spend,
   ROAS, blended, purchases.
 
-=== STEP 2 — SHOPIFY revenue + NEW CUSTOMERS (yesterday) ===
+=== STEP 2 — SHOPIFY revenue + NEW CUSTOMERS (for YDAY) ===
 - Revenue: run-analytics-query `FROM sales SHOW orders, gross_sales, total_sales SINCE
-  yesterday UNTIL yesterday`. If it fails, use list-orders for yesterday and sum totals.
-- New customers: list-customers with `order_date:'<yesterday>'`. Capture each name +
+  YDAY UNTIL YDAY` (use the literal YDAY date, not the word "yesterday"). If it fails,
+  use list-orders for the YDAY date range and sum totals.
+- New customers: list-customers with `order_date:'YDAY'`. Capture each name +
   order value; flag any order > ₹3,000 as a VIP to nurture.
 - Blended ROAS = Shopify total_sales ÷ Meta spend (2 decimals), label directional.
 

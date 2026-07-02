@@ -68,7 +68,10 @@ time_range '{"since":"YDAY","until":"YDAY"}' (NOT date_preset "yesterday").
 - Optional: if a CRM sheet is reachable via Google Drive, pull relevant fields to enrich.
 
 === STEP 4 — TEAM SUMMARY (Slack, last 24h, NO DMs) — DEPTH RULES ===
-Sweep ALL channels (public + private, no DMs). For EVERY channel:
+Sweep ALL channels (public + private, no DMs) EXCEPT #finance-dept (C0A838DELMR) —
+skip that channel entirely; do not read or summarize any of its messages.
+(Note: #office-finances-and-expenses C0AT4FDGW06 IS still included — it feeds Finances.)
+For EVERY other channel:
 - Open EVERY thread that has replies and read all replies. Do NOT summarize from the
   parent message alone — this is where detail hides.
 - Note file/image/VIDEO attachments (e.g. "Rosy posted a video in #creatives-and-shih").

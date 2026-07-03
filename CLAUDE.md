@@ -17,7 +17,7 @@ and the `memory/` files below. Each report is a continuing story that builds on 
 
 ### The daily routine (runs ~12 AM IST, ideally via a scheduled Claude session)
 1. Sweep all Slack channels (public + private, **no DMs**) for the last 24h.
-   **Exclude `#finance-dept` (C0A838DELMR) entirely.** (Keep `#office-finances-and-expenses`.)
+   **Exclude `#finance-dept` (C0A838DELMR) and `#exec-chat` (C0B589D9UMR) entirely.** (Keep `#office-finances-and-expenses`.)
 2. Build a digest grouped by theme + Orders & Shipping / Daily Standup / Finances /
    a consolidated "who needs to do what" list by person. Match the format of
    `slack-digests/2026-06-23.md`.

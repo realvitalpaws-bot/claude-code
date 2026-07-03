@@ -84,6 +84,15 @@ For EVERY other channel:
 Group into: Key updates (by theme), Content, Orders & shipping (by outcome), Daily
 standup (per person), Finances (every amount).
 
+=== STEP 4b — CLAUDE SESSIONS (own work, YDAY) ===
+Summarize what Claude itself did for the business on YDAY:
+- Read memory/claude-worklog.md and take the entries dated YDAY.
+- Also run `git log --since='YDAY 00:00' --until='YDAY 23:59' --pretty='- %s'` for
+  concrete commits that day (dedupe against the worklog).
+- Note: past Claude chat sessions cannot be read directly — rely on the worklog +
+  git log. If neither has YDAY entries, write "No Claude sessions logged."
+Put this in the posted message as the "🤖 CLAUDE SESSIONS" section.
+
 === STEP 5 — STORYLINE / PROGRESS ("episode recap") ===
 For each active arc in memory/storylines.md (WhatsApp community, customer quality,
 ops/automation, ads/growth, product/app, content engine): one line on what happened
@@ -118,6 +127,7 @@ _All indexed in memory/customers.md (deduped by name)._
 📦 *ORDERS & SHIPPING* — • <name> (<status>) ...
 🗓 *STANDUP* — • <person>: ...
 💸 *FINANCES* — • ...
+🤖 *CLAUDE SESSIONS* — • <what Claude built/did that day> ...
 ━━━━━━━━━━━━━━━━━━━━━━━
 📺 *PROGRESS (episode recap)*
 • <Arc> <up/flat/down> — <one line>

@@ -13,7 +13,11 @@ and the `memory/` files below. Each report is a continuing story that builds on 
 - `memory/storylines.md` — ongoing arcs + company vision; advance each arc daily.
 - `memory/metrics-ledger.md` — one row per day (spend, ROAS, revenue, blended); used for trends.
 - `memory/customers.md` — CRM index of notable customers/VIPs (deduped by name).
+- `memory/claude-worklog.md` — every session appends a short dated note of what it did; the report summarizes it.
 - `routines/daily-report.md` — the full, authoritative routine prompt. Follow it exactly.
+
+**Before ending any working session, append a short dated entry to `memory/claude-worklog.md`**
+(what you did) and commit it — the daily report's "🤖 Claude sessions" section is built from it.
 
 ### The daily routine (runs ~12 AM IST, ideally via a scheduled Claude session)
 1. Sweep all Slack channels (public + private, **no DMs**) for the last 24h.

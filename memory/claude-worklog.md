@@ -6,6 +6,9 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+## 2026-07-07
+- Fixed the Claude repo problem (Slack↔Claude repo integration is working again).
+
 ## 2026-06-23
 - Built the daily Slack digest + persistent memory system (slack-digests/, MEMORY.md, CLAUDE.md).
 - Created the combined daily report routine (Meta ads + Shopify + team summary): routines/daily-report.md.

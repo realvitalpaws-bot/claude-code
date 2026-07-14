@@ -1,5 +1,10 @@
 # Claude Sessions Worklog
 
+## 2026-07-15
+- First session with repo access since 2026-06-23 — reconnected the daily-report memory system after a ~3-week gap (2026-06-24 to 2026-07-13 have no digests/memory entries; a Jul 13 report was posted straight to Slack by a disconnected session and never saved).
+- Ran the daily routine for YDAY = 2026-07-14: pulled Meta ads + Shopify data, swept all Slack channels (public + private, excluding #finance-dept/#exec-chat), wrote `slack-digests/2026-07-14.md`, updated `slack-digests/MEMORY.md`, `memory/metrics-ledger.md`, `memory/storylines.md`, `memory/customers.md`, and posted the combined report to #vitalpaws-core.
+
+
 Every Claude Code session that works on VitalPaws appends a short, dated entry here
 (newest date on top) describing what it did. The daily report reads the entries for the
 report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how Claude's

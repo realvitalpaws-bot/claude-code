@@ -20,7 +20,15 @@ self-sustaining community.
   business is still "a pure WhatsApp based system" managed by Krishna — no
   Community/Groups expansion visible in this sweep (note: 3 weeks, Jun24-Jul13,
   are an untracked gap — this may have moved without being logged).
-- Trend: ▬ (flat, but data gap makes this uncertain)
+- Latest (2026-07-15): Shiva proposed onboarding freelance dog-boarders ("silver
+  tier") into a rated network, sourced from the same informal WhatsApp offline
+  circles; Tobechukwu countered with a lean 4-6 week WhatsApp-only concierge
+  pilot (8-10 boarders, manual bookings, decision gate at 15+ stays/30%+ repeat
+  intent) instead of building a full marketplace now. Rosy reacted positively.
+  Not yet formally decided. Separately, Sunday Jul 18 vet Live announcement
+  still pending in the WhatsApp Community group (blocked on the poster date
+  question, see Content).
+- Trend: ▲ (the boarder-network idea is the biggest strategic input in weeks)
 - Open risk: confusion over Community vs Channel vs Groups; needs clear next steps.
 
 ### 2. Customer quality / fraud control
@@ -30,6 +38,12 @@ self-sustaining community.
   unresolved at day's end (Khushal unreachable twice; Henny still pending after
   a promised callback). One new VVIP risk case: V Sanjiv (actor Venkat Sanjeev)
   threatened legal action if there's any side effect — needs careful handling.
+- Latest (2026-07-15): Still slipping, arguably worse — of 6 new orders, 3 of 4
+  named customers were unreached/unresolved at day's end (Roshni's address issue
+  unresolved, Saju's call dropped, Mukunda unreachable), and 2 orders had no
+  name captured at all with no Slack notification firing — nobody on the team
+  saw them. Repeat customer Shaifali reported no improvement after pack 1 but
+  reordered anyway (churn risk if pack 2 also doesn't work).
 - Trend: ▼
 - Win: Vanga (₹4,378, Jun 23) remains the model VIP — her dog is the star of the
   new Jul 14 ad video and the Jul 18 Instagram Live.
@@ -41,13 +55,23 @@ self-sustaining community.
   unlogged — a Jul 13 report was posted straight to Slack with no repo access).
   Restored as of this session. Shiva also pushed the team to be more consistent
   with text standups.
-- Trend: ▲ (big — the core memory system itself is back online)
+- Latest (2026-07-15): The "restore" itself turned out to be incomplete — the
+  Jul 14 session's PR was never merged into `main`, so this session started
+  from the same stale state `main` had before Jun 23. Found this is a repeat
+  pattern: 4 daily-report PRs (Jul 6, Jul 14, and others) are open and
+  unmerged. Manually recovered Jul 14's data from the abandoned branch to keep
+  continuity, but the underlying fix (merging PRs) needs a human.
+- Trend: ▼ (the fix from yesterday didn't actually take; needs human action)
 
 ### 4. Ads & growth (blended ROAS)
 - Latest (2026-06-23): Spend ₹4,329.44, Meta ROAS 2.19, blended 1.76x, 6 purchases.
 - Latest (2026-07-14): Spend ₹2,896.72, Meta ROAS 1.40, blended 1.68x, 4 purchases.
   Down vs the Jun 23 baseline, but up vs the unlogged Jul 13 numbers (ROAS 0.48,
   blended 1.41x, 2 purchases) — still riding on a single ad ("Joey V2-bofu").
+- Latest (2026-07-15): Spend ₹2,897.37 (flat), ROAS 1.37 (down slightly),
+  4 purchases (flat) — the ad side barely moved. Blended ROAS jumped to 2.46x,
+  but that's from stronger Shopify order volume (7 vs 5), not ad performance.
+  Rosy flagged that boosting mysteriously stopped on a separate post, unresolved.
 - Trend: ▬ (mixed — recovering from an unlogged dip, still below the Jun 23 baseline)
 
 ### 5. Product / app (DailyPup v2)
@@ -56,7 +80,12 @@ self-sustaining community.
 - Latest (2026-07-14): Google sign-in bug fixed; team pushed to download/test
   (Android recommended for now); recruiting 8-9 more internal testers; idea raised
   to email probiotics customers a marketing teaser + survey about the app.
-- Trend: ▲
+- Latest (2026-07-15): Same tester-recruitment blocker as before (need 8-9
+  more; 5 signed up but 0 have opened the app yet), plus a harder requirement
+  surfaced — Google requires a 7-day in-app streak before allowing a full
+  production launch. Team discussed tapping existing customers via WhatsApp
+  if internal recruiting stalls.
+- Trend: ▬ (same blocker, higher bar)
 
 ### 6. Content engine
 - Latest (2026-06-23): Rosy posted a new video in #creatives-and-shih; good
@@ -66,4 +95,9 @@ self-sustaining community.
   and be boosted on two platforms. New product-pack design also in review
   (duck vs salmon flavor, feeding-chart table pending). Celebrity/influencer idea
   floated for a September push.
-- Trend: ▲
+- Latest (2026-07-15): New video cut reviewed (V2/V2.2); Instagram profile
+  refreshed for a WhatsApp click-through; a new customer content lead
+  (Priyanka, 2 Shih Tzus) sourced for a review video. But: the Jul 18 vet Live
+  poster says "Sunday" when the 18th is actually a Saturday — Krishna caught
+  it, team chose to leave it uncorrected. Also an unexplained ads-boosting stop.
+- Trend: ▲ (active day, but a real date-error risk left unresolved)

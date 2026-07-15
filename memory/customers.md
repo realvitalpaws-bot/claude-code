@@ -8,7 +8,37 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
   (beagle, ~20kg, itching 15–20 days, tried K9 Vitality, moving to salmon) + a
   15-yr-old golden retriever. Feeds fresh food. 5+ rescue indies; dog-rights
   activist (father fought GHMC on street-dog sterilisation). Super enthusiastic;
-  good content shot with her. NEXT: welcome msg + add to WhatsApp group (Krishna).
+  good content shot with her. 2026-07-14: her dog is the star of the new ad video
+  (edited same day, "sooo awesome"); Sunday 18 Jul Instagram Live with a vet planned
+  around her. NEXT: lock the Jul 18 Live logistics (Shiva/Rosy).
+- **V Sanjiv / Venkat Sanjeev** — order ₹799 (2026-07-14), low value but VVIP by
+  identity: actor, said to belong to the Tamil Nadu CM's household. Dog Pepper
+  (Shih Tzu, 3.5yo, 7.5kg, paw-licking/itching, eats twice a day). Told Abhay he'll
+  sue if there's any side effect. NEXT: Shiva/Krishna personal follow-up, make sure
+  dosage/quality guidance is airtight — reputational risk, not a churn risk.
+
+## ⚠️ Watch (churn / quality risk)
+- **Shaifali Mathur** — repeat customer, 2 orders (₹799 on/around Jun, ₹1,579 on
+  2026-07-15), lifetime spend ₹2,378. Reported NO improvement in her dog's skin
+  condition after the first pack; placed a 2-pack repeat order anyway to give it
+  1–2 more months. NEXT: check back in on results before the next reorder decision
+  — if pack 2 also fails, high risk of losing her and a public "didn't work" story.
+
+## New customers — 2026-07-15 (Shopify)
+- Mukunda Shanbhag — ₹1,499 (PAID/UPI, unreachable by phone, welcome msg sent)
+- Saju Premjith — ₹879 (COD, pending — call dropped, confirmation msg sent)
+- Aneesha Singh — ₹799 (PAID/UPI, confirmed — dog Percy, Shih Tzu, itching)
+- Roshni Wagh — ₹799 (PAID/UPI — address/locality issue flagged, unresolved)
+- 2 orders, ₹783.02 and ₹799 — no name/phone captured, no Shopify-notification
+  bot message found in Slack at all. Unexplained — flagged for a manual check,
+  not confirmed as fraud.
+
+## New customers — 2026-07-14 (Shopify)
+- Harinder kaur — ₹799 (no Slack order thread found, status n/a)
+- Navya shree — ₹879 (COD, dog Bruno — Shih Tzu, itching + paw-chewing; welcome msg pending)
+- V Sanjiv (Venkat Sanjeev) — ₹799 ⭐ VVIP (see above)
+- Henny Patel — ₹1,579 (COD, unresolved — asked for callback, redial unconfirmed)
+- Khushal Adlakha — ₹799 (PAID, unreachable twice; welcome msg sent anyway)
 
 ## New customers — 2026-06-23 (Shopify)
 - Chitra Senthil — ₹1,579

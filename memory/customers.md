@@ -24,6 +24,14 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
   1–2 more months. NEXT: check back in on results before the next reorder decision
   — if pack 2 also fails, high risk of losing her and a public "didn't work" story.
 
+## New customers — 2026-07-16 (order values n/a — Shopify token expired this session)
+- DSunilKumar — dog Cookie, Shih Tzu, 6yo/6.7kg, licking paws, no vet consult, eats
+  2x/day. Product explained, confirmed.
+- Rajni — dog Rio, 10yo/6kg, Lhasa Apso–Shih Tzu mix, paws licking, no other issues,
+  no vet consult, eats 2x/day. Product explained, confirmed.
+- Chella — COD, did not answer the confirmation call; Krishna following up. Pending.
+- Jatin — COD, posted late in the day (22:47 IST), no response yet. Pending.
+
 ## New customers — 2026-07-15 (Shopify)
 - Mukunda Shanbhag — ₹1,499 (PAID/UPI, unreachable by phone, welcome msg sent)
 - Saju Premjith — ₹879 (COD, pending — call dropped, confirmation msg sent)

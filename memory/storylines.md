@@ -28,7 +28,12 @@ self-sustaining community.
   Not yet formally decided. Separately, Sunday Jul 18 vet Live announcement
   still pending in the WhatsApp Community group (blocked on the poster date
   question, see Content).
-- Trend: ▲ (the boarder-network idea is the biggest strategic input in weeks)
+- Latest (2026-07-16): No community/group growth move; the boarder-network idea
+  wasn't mentioned again. Krishna kept up regular WhatsApp content posting
+  (Thursday content); Rosy redirected messaging toward the Sunday vet Live
+  ("tell your creators to save dog questions for Live") instead of more
+  explainer posts.
+- Trend: ▬ (quiet day on this arc)
 - Open risk: confusion over Community vs Channel vs Groups; needs clear next steps.
 
 ### 2. Customer quality / fraud control
@@ -44,7 +49,14 @@ self-sustaining community.
   name captured at all with no Slack notification firing — nobody on the team
   saw them. Repeat customer Shaifali reported no improvement after pack 1 but
   reordered anyway (churn risk if pack 2 also doesn't work).
-- Trend: ▼
+- Latest (2026-07-16): Mixed. 2 of 4 new order alerts got proper pet intake
+  (DSunilKumar, Rajni — both confirmed with dog details). But 2 older
+  non-responsive customers from Jul 14/15 (Henny, Saju) were shipped anyway
+  without ever actually confirming with them — the same "ship without
+  confirmation" pattern as before, unresolved. 1 new order (Chella) didn't
+  answer the call; 1 (Jatin) arrived too late in the day to act on.
+- Trend: ▬ (intake process works when the customer answers; shipping to
+  non-responsive customers is still an open, unaddressed risk)
 - Win: Vanga (₹4,378, Jun 23) remains the model VIP — her dog is the star of the
   new Jul 14 ad video and the Jul 18 Instagram Live.
 
@@ -61,7 +73,13 @@ self-sustaining community.
   pattern: 4 daily-report PRs (Jul 6, Jul 14, and others) are open and
   unmerged. Manually recovered Jul 14's data from the abandoned branch to keep
   continuity, but the underlying fix (merging PRs) needs a human.
-- Trend: ▼ (the fix from yesterday didn't actually take; needs human action)
+- Latest (2026-07-16): Same pattern a third day running — no PR has been merged
+  (#3, #4, #5, #7, and now #8 all still open). This session again worked around
+  it by branching off the latest unmerged PR (#8) instead of stale `main`.
+  Separately, the Shopify MCP connector's token expired mid-run; this is a
+  non-interactive session and can't complete the re-auth flow, so Shopify
+  revenue/CRM data is n/a today — another automation gap needing human action.
+- Trend: ▼ (both the PR-merge fix and now a Shopify auth issue need a human)
 
 ### 4. Ads & growth (blended ROAS)
 - Latest (2026-06-23): Spend ₹4,329.44, Meta ROAS 2.19, blended 1.76x, 6 purchases.
@@ -72,7 +90,14 @@ self-sustaining community.
   4 purchases (flat) — the ad side barely moved. Blended ROAS jumped to 2.46x,
   but that's from stronger Shopify order volume (7 vs 5), not ad performance.
   Rosy flagged that boosting mysteriously stopped on a separate post, unresolved.
-- Trend: ▬ (mixed — recovering from an unlogged dip, still below the Jun 23 baseline)
+- Latest (2026-07-16): Spend ₹2,831.68 (down ~2.3%), ROAS 1.19 (down from 1.37),
+  4 purchases (flat) — still the same single ad. Blended n/a (Shopify down).
+  Shiva noted ad spend is now split between the ads team and social team's
+  separate boosted-post budget. A new concern: a boosted post got 10k
+  views/700 likes but zero comments/shares out of ~9,793 reach — Atharv
+  suspects bot views, unresolved.
+- Trend: ▬ (spend/ROAS eased slightly; a new trust question opened on boosted-
+  post authenticity)
 
 ### 5. Product / app (DailyPup v2)
 - Latest (2026-06-23): Sudheer to list v2 features + set up OTP-setup meeting;
@@ -85,7 +110,13 @@ self-sustaining community.
   surfaced — Google requires a 7-day in-app streak before allowing a full
   production launch. Team discussed tapping existing customers via WhatsApp
   if internal recruiting stalls.
-- Trend: ▬ (same blocker, higher bar)
+- Latest (2026-07-16): Still short of the 12-tester/14-day bar (only ~3 opted
+  in per yesterday's audit). Sudheer shipped a new build and opened a bug
+  thread; a login bug is now blocking at least 2 testers (Shiva, and Rosy's
+  Android-using friend), unresolved at day's end. Krishna's personal contacts
+  are trickling in (2 more expected). DUNS number debated — not actually
+  needed yet, but Sudheer registered for one anyway.
+- Trend: ▬ (same blocker, now compounded by an active login bug)
 
 ### 6. Content engine
 - Latest (2026-06-23): Rosy posted a new video in #creatives-and-shih; good
@@ -100,4 +131,10 @@ self-sustaining community.
   (Priyanka, 2 Shih Tzus) sourced for a review video. But: the Jul 18 vet Live
   poster says "Sunday" when the 18th is actually a Saturday — Krishna caught
   it, team chose to leave it uncorrected. Also an unexplained ads-boosting stop.
-- Trend: ▲ (active day, but a real date-error risk left unresolved)
+- Latest (2026-07-16): The stuck water-bottle/Amazon-second-product decision
+  finally moved forward (weeks of drag — Shiva called it out directly);
+  sourcing a sample now. New ad creative A/B-boosted against an older post
+  (see Ads); raw footage shared for the next edit; new supplement-design
+  creative posted, awaiting Shiva's opinion. Amazon A+ desktop creatives done.
+- Trend: ▲ (real forward motion on the product decision; content output
+  stayed active, though the bot-view doubt tempers it)

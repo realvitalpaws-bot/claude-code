@@ -1,5 +1,19 @@
 # Claude Sessions Worklog
 
+## 2026-07-17
+- Ran the daily routine for YDAY = 2026-07-16: pulled Meta ads data, swept all Slack
+  channels (public + private, excluding #finance-dept/#exec-chat) with full thread
+  reads, wrote `slack-digests/2026-07-16.md`, updated `slack-digests/MEMORY.md`,
+  `memory/metrics-ledger.md`, `memory/storylines.md`, `memory/customers.md`, and
+  posted the combined report to #vitalpaws-core.
+- Shopify MCP connector's token expired mid-session; this is a non-interactive session
+  and can't complete the OAuth re-auth flow, so Shopify revenue/new-customer
+  values/blended ROAS are n/a in today's report. Flagged for a human to re-authorize.
+- Confirmed the PR backlog is still unmerged (now #3, #4, #5, #6, #7, #8) — no PR has
+  been merged since it was first flagged on Jul 15. This session again branched off
+  the tip of the latest unmerged PR (#8) rather than stale `main` to preserve
+  continuity, exactly as PR #8 did with PR #7.
+
 ## 2026-07-16
 - Ran the daily routine for YDAY = 2026-07-15: pulled Meta ads + Shopify data,
   swept all Slack channels (public + private, excluding #finance-dept/#exec-chat),

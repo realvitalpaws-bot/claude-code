@@ -24,6 +24,18 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
   1–2 more months. NEXT: check back in on results before the next reorder decision
   — if pack 2 also fails, high risk of losing her and a public "didn't work" story.
 
+## New customers — 2026-07-17 (order values n/a — Shopify token expired again, 5th day)
+No pet-intake conversations found; only automated "has it arrived?" Zapier pings with no
+team replies logged. Status as posted, not independently confirmed:
+- Shagnick — COD, PENDING
+- Vignesh — COD, PENDING
+- shubhambhendia — COD, PENDING
+- Charmi — UPI, PAID
+- Teresa — COD, PENDING
+- Abhay — COD, PENDING (looks like an internal/test order, not a real customer)
+- Smita — COD, PENDING
+- Surekhakamal — COD, PENDING
+
 ## New customers — 2026-07-16 (order values n/a — Shopify token expired this session)
 - DSunilKumar — dog Cookie, Shih Tzu, 6yo/6.7kg, licking paws, no vet consult, eats
   2x/day. Product explained, confirmed.

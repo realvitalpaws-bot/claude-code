@@ -1,5 +1,20 @@
 # Claude Sessions Worklog
 
+## 2026-07-18 (routine run reporting on YDAY = 2026-07-17)
+- Ran the daily routine for YDAY = 2026-07-17: pulled Meta ads data, swept all 15
+  non-excluded Slack channels (public + private, excluding #finance-dept/#exec-chat)
+  with full thread reads, wrote `slack-digests/2026-07-17.md`, updated
+  `slack-digests/MEMORY.md`, `memory/metrics-ledger.md`, `memory/storylines.md` (added a
+  new arc for the Pawathon event), `memory/customers.md`, and posted the combined report
+  to #vitalpaws-core.
+- Shopify MCP connector token expired again (5th day running); non-interactive session
+  can't re-auth, so Shopify revenue/new-customer values/blended ROAS are n/a again.
+- Found `main` still stuck at the Jun 23 merge with PRs #3–#9 all open/unmerged (backlog
+  now 5+ days old). Fast-forwarded this session's branch onto PR #9's tip (which already
+  carries #7 and #8's commits) to preserve continuity, then opened a new PR on top with
+  today's changes. Did not attempt to merge the backlog myself — flagging again for a
+  human, as every session since Jul 15 has.
+
 ## 2026-07-17
 - Ran the daily routine for YDAY = 2026-07-16: pulled Meta ads data, swept all Slack
   channels (public + private, excluding #finance-dept/#exec-chat) with full thread

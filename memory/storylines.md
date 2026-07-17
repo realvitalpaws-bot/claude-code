@@ -33,7 +33,10 @@ self-sustaining community.
   (Thursday content); Rosy redirected messaging toward the Sunday vet Live
   ("tell your creators to save dog questions for Live") instead of more
   explainer posts.
-- Trend: ▬ (quiet day on this arc)
+- Latest (2026-07-17): The probiotics-buyer survey form (today's #1 standup priority,
+  owned by Krishna, meant to ship on WhatsApp) apparently never actually went out —
+  Krishna asked Tobechukwu where it was late at night and couldn't find it.
+- Trend: ▼ (a planned WhatsApp deliverable slipped)
 - Open risk: confusion over Community vs Channel vs Groups; needs clear next steps.
 
 ### 2. Customer quality / fraud control
@@ -55,8 +58,12 @@ self-sustaining community.
   without ever actually confirming with them — the same "ship without
   confirmation" pattern as before, unresolved. 1 new order (Chella) didn't
   answer the call; 1 (Jatin) arrived too late in the day to act on.
-- Trend: ▬ (intake process works when the customer answers; shipping to
-  non-responsive customers is still an open, unaddressed risk)
+- Latest (2026-07-17): No pet-intake or confirmation conversations visible in the sweep
+  today — #shipping-and-order-notifications only carried 8 automated "has it arrived?"
+  Zapier pings (Shagnick, Vignesh, shubhambhendia, Charmi, Teresa, Abhay, Smita,
+  Surekhakamal), with no team replies logged in-channel. Can't confirm anyone followed up.
+- Trend: ▼ (no visible confirmation activity this session; intake process may just not
+  be happening in Slack, or was missed in the sweep — worth a manual check)
 - Win: Vanga (₹4,378, Jun 23) remains the model VIP — her dog is the star of the
   new Jul 14 ad video and the Jul 18 Instagram Live.
 
@@ -79,7 +86,10 @@ self-sustaining community.
   Separately, the Shopify MCP connector's token expired mid-run; this is a
   non-interactive session and can't complete the re-auth flow, so Shopify
   revenue/CRM data is n/a today — another automation gap needing human action.
-- Trend: ▼ (both the PR-merge fix and now a Shopify auth issue need a human)
+- Latest (2026-07-17): 5th day running with no PR merged (#3, #4, #5, #6, #7, #8, #9 all
+  still open) and Shopify still down. This session fast-forwarded its branch onto PR #9's
+  tip (which already carries #7 and #8) to preserve continuity, then opened a new PR.
+- Trend: ▼ (backlog keeps growing; both fixes still need a human)
 
 ### 4. Ads & growth (blended ROAS)
 - Latest (2026-06-23): Spend ₹4,329.44, Meta ROAS 2.19, blended 1.76x, 6 purchases.
@@ -96,8 +106,11 @@ self-sustaining community.
   separate boosted-post budget. A new concern: a boosted post got 10k
   views/700 likes but zero comments/shares out of ~9,793 reach — Atharv
   suspects bot views, unresolved.
-- Trend: ▬ (spend/ROAS eased slightly; a new trust question opened on boosted-
-  post authenticity)
+- Latest (2026-07-17): Real progress — spend ₹5,832.56 (up ~106%) and purchases 8
+  (doubled), ROAS up to 1.65 (from 1.19). First day running 4 ads at once (Joey
+  V2-bofu, Hindi Girl Collab, Vanga Manasa v1, a Jackie partnership ad) instead of
+  depending on a single ad. Best CPA: Vanga Manasa v1 at ₹412.53.
+- Trend: ▲ (broke out of single-ad dependency; spend and purchases both roughly doubled)
 
 ### 5. Product / app (DailyPup v2)
 - Latest (2026-06-23): Sudheer to list v2 features + set up OTP-setup meeting;
@@ -116,7 +129,10 @@ self-sustaining community.
   Android-using friend), unresolved at day's end. Krishna's personal contacts
   are trickling in (2 more expected). DUNS number debated — not actually
   needed yet, but Sudheer registered for one anyway.
-- Trend: ▬ (same blocker, now compounded by an active login bug)
+- Latest (2026-07-17): Opt-ins climbed to 6 (from ~3 as of the Jul 16 audit) — Sudheer
+  reported the count to Tobechukwu. Still short of the 12-tester bar; login-bug status
+  from Jul 16 not mentioned again today.
+- Trend: ▲ (opt-in count moving up)
 
 ### 6. Content engine
 - Latest (2026-06-23): Rosy posted a new video in #creatives-and-shih; good
@@ -136,5 +152,23 @@ self-sustaining community.
   sourcing a sample now. New ad creative A/B-boosted against an older post
   (see Ads); raw footage shared for the next edit; new supplement-design
   creative posted, awaiting Shiva's opinion. Amazon A+ desktop creatives done.
-- Trend: ▲ (real forward motion on the product decision; content output
-  stayed active, though the bot-view doubt tempers it)
+- Latest (2026-07-17): Atharv asked Priyatham/Rosy for 2 more scripts twice (morning and
+  night) with nothing delivered by day's end. Charu flagged a video as "not very
+  attractive" with no resolution. On the plus side, the branded-content/partnership ad
+  authorization issue got resolved and the ad went live.
+- Trend: ▬ (open script request and unresolved feedback, but the partnership-ad
+  authorization blocker cleared)
+
+### 7. Pawathon (Oct 18 Hyderabad pet marathon) — NEW ARC
+- Latest (2026-07-17): Abhay announced VitalPaws' first major offline event — a 1.5km
+  pet marathon in Hyderabad on October 18th, venue already booked and paid for. Roadmap:
+  weekly mini warm-up events (late July–Sept) for content + hype, Shiva runs
+  Hyderabad-only ads, Rosy + Atharv chase local influencers/celebrities with dogs
+  (Atharv already reached out to Venkatesh Daggubati's studio), target 400 registrations
+  by Aug 20 to start sponsor outreach Aug 21, then Sept/Oct logistics (t-shirts, bibs,
+  medals). Abhay also wants TV/newspaper coverage. Team reacted positively; Rosy flagged
+  the plan still needs to be broken into a per-person task list.
+- Trend: ▲ (just launched — the most concrete, funded step yet toward the "community as
+  big as Instagram" vision)
+- Open risk: no per-person task breakdown yet; a lot of ambitious steps (400
+  registrations, sponsors, press) on a tight multi-month timeline.

@@ -8,6 +8,20 @@ execution environment is ephemeral and only committed files survive between runs
 
 ---
 
+## 2026-07-17
+- **Ads:** Spend ₹5,832.56 (up ~106%), ROAS 1.65 (up from 1.19), 8 purchases (doubled) —
+  first day running 4 ads instead of 1 (Joey V2-bofu, Hindi Girl Collab, Vanga Manasa v1,
+  Jackie partnership). Shopify still down (5th day), blended n/a.
+- **Big news:** Abhay announced the "Pawathon" — a 1.5km pet marathon in Hyderabad on Oct
+  18, venue already paid for, roadmap to 400 registrations by Aug 20 then sponsor
+  outreach. New storyline arc — biggest real-world community push yet.
+- **Gaps:** Probiotics survey form (owned by Krishna, today's #1 standup priority)
+  apparently never shipped. Amazon FBA restock (36 units left, Charu asked to send 100)
+  stalled in a confused thread. Brand-story ask to Abhay was garbled/misunderstood.
+- **Ops:** PR backlog now 5+ days old (#3–#9 unmerged against `main`); this session
+  fast-forwarded onto PR #9's tip to preserve continuity and opened a new PR.
+- Full digest: `slack-digests/2026-07-17.md`
+
 ## 2026-07-16
 - **Infra:** PR backlog still unmerged (#3, #4, #5, #7, and now #8) — this session again
   had to branch off the latest unmerged PR instead of stale `main`. Shopify MCP token

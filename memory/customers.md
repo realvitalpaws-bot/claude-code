@@ -21,6 +21,19 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
   (UPI paid) but hasn't answered Abhay's confirmation call (went to voicemail);
   Krishna is following up by message instead. NEXT: confirm before shipping.
 
+## New customers — 2026-07-19 (Shopify)
+- Sree Lakshmi — ₹1,499 — paid (UPI), confirmation call unanswered, WhatsApp
+  follow-up sent (Krishna).
+- Aadesh — ₹879 — COD, confirmed by call, told to Jayapriya aunty to ship.
+- Shalini Duke — ₹2,879 — COD, confirmed by call, told to Jayapriya aunty to ship.
+- Abhishek — ₹799 — paid (UPI), confirmation call unanswered, WhatsApp
+  follow-up sent (Krishna).
+- Sapna Nair — ₹1,579 — COD, confirmed by call, told to Jayapriya aunty to ship.
+- Jiffin Joy — ₹2,879 — COD, confirmed by call, told to Jayapriya aunty to ship.
+- Radika Singh Chauhan — ₹879 — COD, confirmed by call, told to Jayapriya aunty
+  to ship.
+- Gourav — ₹879 — COD, confirmed by call, told to Jayapriya aunty to ship.
+
 ## New customers — 2026-07-18 (Shopify)
 - Sarika Nagpal — ₹1,579 — dog Zara, Lhasa Apso, 6yo/8.5kg, itching + paw
   licking, no prior probiotic use. Qualified by call, told how to use product. COD.

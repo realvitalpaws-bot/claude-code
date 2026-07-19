@@ -6,6 +6,22 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+## 2026-07-19
+- Ran the daily VitalPaws report for 2026-07-19 (Meta ads, Shopify, full Slack
+  sweep, CRM).
+- Found the Jul 18 "repo-memory fix" never merged: `main` was still stuck at
+  the Jun 23 setup commit, and the unmerged-PR backlog had grown to 9 (#3–#11).
+  Verified via `git log --all` and the GitHub PR list. Fetched PR #11's branch
+  (the chain's tip, already containing #7/#8/#9/#10's work) and reset this
+  session's branch onto it to keep continuity instead of reconstructing memory
+  from scratch again — but did not merge to `main` (needs human write access /
+  explicit go-ahead).
+- Updated memory/metrics-ledger.md, memory/storylines.md, memory/customers.md
+  for 2026-07-19; wrote slack-digests/2026-07-19.md; prepended
+  slack-digests/MEMORY.md.
+- Posted the combined report to #vitalpaws-core and flagged the PR backlog to
+  the user directly (push notification).
+
 ## 2026-07-18
 - Ran the daily VitalPaws report for 2026-07-18 (Meta ads, Shopify, Slack sweep, CRM).
 - Discovered the repo memory had received zero commits since the Jun 23 setup, despite

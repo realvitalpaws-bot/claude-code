@@ -25,3 +25,4 @@ each report. Currency INR. "Meta rev" = spend × purchase_roas (rounded).
 | 2026-07-16 | 2,831.68  | 3,370    | 1.19      | 4         | n/a         | n/a    | n/a     | n/a      | *(Backfilled from Slack)* Shopify token expired; PR backlog (#3,4,5,7,8 unmerged, 3 days) |
 | 2026-07-17 | 5,832.56  | 9,624    | 1.65      | 8         | n/a         | n/a    | n/a     | n/a      | *(Backfilled from Slack)* Pawathon (Oct 18, Hyderabad) announced; broke single-ad dependency (4 ads running) |
 | 2026-07-18 | 5,766.71  | 6,343    | 1.10      | 6         | 9,550       | 10     | 1.66x   | 9        | Live-pulled. Repo commit finally landing again — see storylines.md ops arc |
+| 2026-07-19 | 11,658.44 | 6,995    | 0.60      | 5         | 12,272      | 8      | 1.05x   | 8        | Worst ROAS on record; first IG Live (~7k views); repo-memory fix from Jul 18 never merged — 9 PRs backlogged |

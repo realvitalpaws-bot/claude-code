@@ -14,63 +14,61 @@ self-sustaining community.
 ## Active arcs
 
 ### 1. WhatsApp Community (community-led growth engine)
-- Latest (2026-07-18): No update surfaced in the Jul 18 sweep. Last known state
-  (Jul 17 report, carried forward): survey form still slipped; no fresh movement
-  logged since the Jun 23 kickoff plan.
-- Trend: ▬ (stalled, no news either way)
+- Latest (2026-07-19): No update surfaced. Last known state (Jul 17 report,
+  carried forward): survey form still slipped; no fresh movement logged since
+  the Jun 23 kickoff plan.
+- Trend: ▬ (stalled, no news either way — 4th day running with no movement)
 - Open risk: confusion over Community vs Channel vs Groups never fully resolved;
   the WhatsApp-boarder idea floated Jul 15 hasn't been picked back up.
 
 ### 2. Customer quality / fraud control
-- Latest (2026-07-18): Mixed day. Krishna + Abhay actively qualified several
-  orders (Sarika Nagpal — dog Zara, Lhasa Apso, itching; Neha Kapoor — Shihtzu,
-  itching) before shipping, per the standing rule. But 2 calls went unanswered
-  (Namrata Chopra repeat order, Dr krishnalal) and one customer (Lokmanya Hazari)
-  flatly refused to give any pet info yet still got a welcome message / shipped —
-  the same "ship anyway" pattern flagged in earlier reports.
-- Trend: ▬ (still inconsistent — good qualification on ~half of today's orders)
+- Latest (2026-07-19): Clean day. Krishna confirmed all 6 COD orders by call
+  before telling Jayapriya aunty to ship (Aadesh, Shalini Duke, Sapna Nair,
+  Jiffin Joy, Radika Singh Chauhan, Gourav); the 2 paid orders with unanswered
+  calls (Sree Lakshmi, Abhishek) got a WhatsApp follow-up instead of being
+  ignored or shipped blind. No "ship anyway with zero info" incidents like
+  Jul 18's Lokmanya Hazari case.
+- Trend: ▲ (best-qualified day logged so far)
 - Win (carried forward): Vanga Manasa (₹4,378, Jun 23) remains the model VIP.
 
 ### 3. Ops & automation (Slack Lists + Claude + repo memory)
-- Latest (2026-07-18): **Major finding this session** — the repo (this file's
-  own home) had not received a single commit since the initial Jun 23 setup,
-  despite daily reports posting to Slack almost every day through Jul 17.
-  Several of those reports even claimed "reconnected" or "saved to memory,"
-  but git history shows otherwise. Shiva also reconnected an expired Shopify
-  connector today (a recurring issue — the connector has expired repeatedly
-  across the gap) and connected Canva to Claude, with Higgsfield planned next.
-  This session backfilled the ledger from Slack history and is committing the
-  fix now.
-- Trend: ▼ overall (multi-week silent data-loss just discovered) but ▲ today
-  (actively being repaired)
-- Open risk: nothing structural stops this from recurring — worth asking a
-  human to confirm the routine's git push step is actually wired up and
-  monitored, not just assumed to work because Slack posts succeed.
+- Latest (2026-07-19): **The Jul 18 "fix" never merged.** `main` is still at the
+  Jun 23 setup commit; the unmerged-PR backlog is now 9 deep (#3–#11), each PR
+  reconstructing memory off the last one instead of off `main`. This session
+  fetched PR #11's branch (the chain's tip) to stay continuous rather than
+  starting over again, but could not merge to `main` itself.
+- Trend: ▼ (the risk flagged Jul 18 as "being repaired" has instead gotten
+  worse — 5 straight sessions have now asked for this to be merged)
+- Open risk: until a human merges #3→#11 into `main` (or fast-forwards to #11's
+  tip), every scheduled session will keep branching off the last session's
+  branch by hand. One missed handoff and continuity breaks for good.
 
 ### 4. Ads & growth (blended ROAS)
-- Latest (2026-07-18): Spend ₹5,766.71, Meta ROAS 1.10, 6 purchases, blended
-  1.66x. Down from Jul 17's breakout day (₹5,832.56 spend, ROAS 1.65, 8
-  purchases, 4 ads running) — still only 2 ads produced any sales today.
-- Trend: ▼ (cooled off after Jul 17's high)
+- Latest (2026-07-19): Spend ₹11,658.44 (~2x Jul 18), Meta ROAS 0.60 (worst on
+  record — first day Meta revenue has landed below spend), 5 purchases, blended
+  1.05x. Two "New Engagement ad" adsets spent ~₹3,170 combined with 0
+  attributed purchases.
+- Trend: ▼ (spend up, efficiency down — worth a specific look at the
+  "New Engagement ad" adsets)
 
 ### 5. Product / app (v2)
-- Latest (2026-07-18): No update in today's sweep. Last known (Jul 17): app
+- Latest (2026-07-19): No update in today's sweep. Last known (Jul 17): app
   testing continuing quietly, no fresh figures reported.
 - Trend: ▬
 
 ### 6. Content engine
-- Latest (2026-07-18): No new finished video/image shipped. Shiva asked Rosy
-  and Atharv for 3 ad-only videos from past collabs for a new launch; separately
-  resolved a creator-platform login block (added 2FA) for Rosy. Also drew a hard
-  line on creator standards — publicly explained (with screenshots) why the team
-  is not paying a non-responsive, demanding creator, calling it a "standards"
-  issue to avoid rewarding low-quality work.
-- Trend: ▬/▼ (ops friction, no new content out the door)
+- Latest (2026-07-19): Biggest content day yet — VitalPaws' first official
+  Instagram Live (Shiva + vet Dr. Sowjanya), ~7k peak views, plus a real
+  quality-standards process introduced for creator reels the same day (after
+  Shiva flagged an unnatural script-read voiceover). Heavy live-prep production
+  (poster, crowd-sourced Q&A list, multiple VO passes for a separate ad).
+- Trend: ▲ (first Live shipped + a concrete quality process, not just a
+  discussion)
 
-### 7. Pawathon — offline community event (NEW, opened 2026-07-17)
-- Latest (2026-07-18): No update surfaced today. As announced Jul 17: Abhay
-  locked an Oct 18 Hyderabad pet-marathon venue (paid), with a roadmap of
-  weekly mini-events through September, Hyderabad-targeted ads from Shiva,
-  influencer outreach from Rosy/Atharv, a 400-registration target by Aug 20,
-  and sponsor outreach from Aug 21.
-- Trend: ▬ (just launched, watch for first roadmap movement)
+### 7. Pawathon — offline community event (opened 2026-07-17)
+- Latest (2026-07-19): No update surfaced. As announced Jul 17: Abhay locked an
+  Oct 18 Hyderabad pet-marathon venue (paid), with a roadmap of weekly
+  mini-events through September, Hyderabad-targeted ads from Shiva, influencer
+  outreach from Rosy/Atharv, a 400-registration target by Aug 20, and sponsor
+  outreach from Aug 21.
+- Trend: ▬ (2nd day with no movement since the announcement)

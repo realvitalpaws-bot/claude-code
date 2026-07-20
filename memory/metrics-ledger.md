@@ -26,3 +26,4 @@ each report. Currency INR. "Meta rev" = spend × purchase_roas (rounded).
 | 2026-07-17 | 5,832.56  | 9,624    | 1.65      | 8         | n/a         | n/a    | n/a     | n/a      | *(Backfilled from Slack)* Pawathon (Oct 18, Hyderabad) announced; broke single-ad dependency (4 ads running) |
 | 2026-07-18 | 5,766.71  | 6,343    | 1.10      | 6         | 9,550       | 10     | 1.66x   | 9        | Live-pulled. Repo commit finally landing again — see storylines.md ops arc |
 | 2026-07-19 | 11,658.44 | 6,995    | 0.60      | 5         | 12,272      | 8      | 1.05x   | 8        | Worst ROAS on record; first IG Live (~7k views); repo-memory fix from Jul 18 never merged — 9 PRs backlogged |
+| 2026-07-20 | 9,050.80  | 14,934   | 1.65      | 11        | 15,731.02   | 12     | 1.74x   | 8        | Strong recovery day; new VIP Anil Nair ₹3,078 (unconfirmed); WhatsApp community got its first nudge in a month; PR backlog now 10 deep (#3–#12) |

@@ -13,13 +13,35 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
 - **V Sanjiv** (actor) — *(carried forward from Jul 17 report, not independently
   re-verified this session)* VVIP, but threatened legal action over side
   effects. NEXT: personal follow-up, handle with care.
+- **Anil Nair** — ₹3,078, new customer 2026-07-20, COD, **no confirmation call
+  logged yet**. NEXT: Krishna/Abhay to confirm before shipping (unconfirmed
+  high-value COD is the exact fraud-risk pattern flagged before).
 
 ## ⚠️ Watch
 - **Shaifali Mathur** — *(carried forward from Jul 17 report)* reordered
   despite reporting no improvement. NEXT: check in before her next reorder.
-- **Namrata Chopra** — first order Jul 2 (₹799). Placed a 2nd order on Jul 18
-  (UPI paid) but hasn't answered Abhay's confirmation call (went to voicemail);
-  Krishna is following up by message instead. NEXT: confirm before shipping.
+- **Damini Patel** — 2nd purchase (2026-07-20), reported a better result this
+  time. No WhatsApp on this number. NEXT: Rosy to do a founder call (customer
+  previously said not to be "posted" anywhere).
+- **Aliveni Kolanupaka** — repeat customer (2026-07-20), itching much
+  improved, glowing feedback. NEXT: Rosy founder call, planned for 2026-07-21.
+- **Harshika** — new customer 2026-07-20 (₹879, COD) who tried to cancel
+  before finishing her *previous* pack; not found on the CRM sheet at all.
+  NEXT: find out the real reason before shipping/cancelling.
+- ~~**Namrata Chopra**~~ — *(correction, 2026-07-20)* Krishna confirmed this
+  was actually her **first** order, placed and shipped same-day on Jul 18, not
+  an unconfirmed 2nd order as previously logged. Resolved, removed from watch.
+
+## New customers — 2026-07-20 (Shopify)
+- Amit Bhola — ₹783.02 (Amazon, Pre+Probiotics 120g, ship by 22/07)
+- Radha Yumnam — ₹2,879 — COD, pending, no confirmation activity logged
+- Anil Nair — ₹3,078 ⭐ VIP — see watchlist above
+- Sonika — ₹879 — COD, pending, no confirmation activity logged
+- Mousumi — ₹879 — COD, confirmed by call. 2 dogs "Nono & Luna" (Shih Tzu,
+  ages 2 & 1, ~8kg), paw-licking/itching/rashes, first-time probiotics user.
+- Asha Donny — ₹799 — paid (UPI), call unanswered, welcome message sent
+- Oscar Lobo — ₹1,499 — paid (UPI), self-confirmed order, welcome message sent
+- Harshika — ₹879 — see watch above
 
 ## New customers — 2026-07-19 (Shopify)
 - Sree Lakshmi — ₹1,499 — paid (UPI), confirmation call unanswered, WhatsApp

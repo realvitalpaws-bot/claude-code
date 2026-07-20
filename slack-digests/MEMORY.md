@@ -8,6 +8,28 @@ execution environment is ephemeral and only committed files survive between runs
 
 ---
 
+## 2026-07-20
+- **Recovery day for ads:** Spend ₹9,050.80 (down 22%), ROAS 1.65 (up from
+  yesterday's worst-ever 0.60), 11 purchases, blended 1.74x. Still only 2 ads
+  running (Vanga Manasa v1, Joey V2-bofu).
+- **Shopify:** ₹15,731.02 (12 orders). 8 new customers incl. new VIP Anil Nair
+  (₹3,078, COD, unconfirmed — needs a call). 4 orders (Anil, Radha, Chitra,
+  Sonika) show zero confirmation activity logged.
+- **WhatsApp community — first movement in a month:** Krishna asked Shiva/Rosy
+  to resume daily pet content in the DailyPup group and the rest of the team
+  to boost engagement.
+- **⚠️ Ops crisis escalating:** repo-memory backlog now 10 PRs deep (#3–#12),
+  still unmerged against `main` (stuck at Jun 23). Shiva is now proposing a
+  dedicated server/EC2 instance (or an old laptop on Ethernet) just to keep
+  Claude's daily sweep from breaking. Flagged 6+ days running.
+- **Ops handover:** Abhay handing order-confirmation calls to Jayapriya
+  (shipping team) starting tonight; Krishna keeps the CRM sheet.
+- **Correction:** Namrata Chopra's Jul 18 order was her first order (not a
+  2nd/unconfirmed one) — shipped same day. Removed from watch.
+- Two repeat customers (Damini Patel, Aliveni Kolanupaka) gave strong feedback
+  and are lined up for founder calls with Rosy — future testimonial content.
+- Full digest: `slack-digests/2026-07-20.md`
+
 ## 2026-07-19
 - **⚠️ Still broken:** the repo-memory fix from Jul 18's report never merged.
   `main` is still stuck at Jun 23; the unmerged-PR backlog has grown to 9 (#3–#11).

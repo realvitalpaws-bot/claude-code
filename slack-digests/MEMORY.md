@@ -8,6 +8,27 @@ execution environment is ephemeral and only committed files survive between runs
 
 ---
 
+## 2026-07-21
+- **Ads slipped back down:** Spend ₹9,403.84 (up slightly), ROAS crashed to 1.02
+  (from 1.65), 8 purchases (down from 11), blended 1.19x (from 1.74x). Still
+  only 2 ads running (Vanga Manasa v1, Joey V2-bofu).
+- **Shopify:** ₹11,173.02 (10 orders). No VIP-value order today. One order
+  (Amar, ₹1,678) flagged by Shiva as an internal test order — "don't ship."
+- **Customer-quality risk resurfaced:** 6 of today's real orders have zero
+  confirmation calls logged. Existing customer Charmi Maru (order #1381) had
+  two missed delivery promises and asked Krishna "is your site genuine?" —
+  escalated to Abhay, unresolved by end of day.
+- **New website bug:** Shiva flagged the 30-day pack is broken on the site
+  after last night's update — urgent call requested with Sudheer.
+- **Offline events moving:** 1KM Dog Run (Necklace Road, Hyderabad)
+  registration form is live (pricing still unresolved — ₹99/₹199 vs a
+  recalled ₹199/₹299/₹499); Rosy pitched a "paw print art" activity for the
+  same Sunday event, approved by Shiva.
+- **⚠️ Ops crisis still unresolved:** repo-memory backlog now 11 PRs deep
+  (#3–#13), still unmerged against `main` (stuck at Jun 23). Flagged 7+ days
+  running.
+- Full digest: `slack-digests/2026-07-21.md`
+
 ## 2026-07-20
 - **Recovery day for ads:** Spend ₹9,050.80 (down 22%), ROAS 1.65 (up from
   yesterday's worst-ever 0.60), 11 purchases, blended 1.74x. Still only 2 ads

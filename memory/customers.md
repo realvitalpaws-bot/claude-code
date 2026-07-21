@@ -13,9 +13,16 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
 - **V Sanjiv** (actor) — *(carried forward from Jul 17 report, not independently
   re-verified this session)* VVIP, but threatened legal action over side
   effects. NEXT: personal follow-up, handle with care.
-- **Anil Nair** — ₹3,078, new customer 2026-07-20, COD, **no confirmation call
-  logged yet**. NEXT: Krishna/Abhay to confirm before shipping (unconfirmed
-  high-value COD is the exact fraud-risk pattern flagged before).
+- **Anil Nair** — ₹3,078, new customer 2026-07-20, COD, **still no
+  confirmation call logged as of 2026-07-21** (now over a day out). NEXT:
+  Krishna/Abhay to confirm before shipping (unconfirmed high-value COD is the
+  exact fraud-risk pattern flagged before).
+- **Charmi Maru** — existing customer, order #1381 (DTDC AWB 7D130779117).
+  Promised delivery twice (Jul 20, then Jul 21), didn't happen either time.
+  Messaged Krishna directly, upset: "is your site genuine?" Escalated to
+  Abhay for real tracking status; unresolved as of 2026-07-21 21:35 IST.
+  NEXT: Abhay to get her a real answer immediately — trust risk, not just a
+  logistics delay.
 
 ## ⚠️ Watch
 - **Shaifali Mathur** — *(carried forward from Jul 17 report)* reordered
@@ -31,6 +38,21 @@ Shopify (list-customers) + Slack notes. Flag VIPs (high value, content, advocate
 - ~~**Namrata Chopra**~~ — *(correction, 2026-07-20)* Krishna confirmed this
   was actually her **first** order, placed and shipped same-day on Jul 18, not
   an unconfirmed 2nd order as previously logged. Resolved, removed from watch.
+
+## New customers — 2026-07-21 (Shopify)
+- DEEPAK GOVIND GAWADE — ₹879 — COD, pending, no confirmation logged
+- Rosie k — ₹879 — COD, pending, no confirmation logged
+- Deepali Krishna Redkar — ₹879 — COD, pending, no confirmation logged
+- Priyanka Thilak — ₹799 — paid (UPI), no confirmation logged
+- Amar . — ₹1,678 — ⚠️ **internal test order**, Shiva said "don't ship" —
+  exclude from real customer count
+- Imtinaro Aier — ₹879 — COD, pending, no confirmation logged
+- Phiroza Patwa — ₹2,799 — paid (UPI), no confirmation logged
+- ARAJYALAKSHMI — ₹799 — paid (UPI), no confirmation logged
+- Unnamed (bounce-c87-jeacyh@mail.codisto.com) — ₹783.02 — marketplace-sync
+  pattern, no Slack order ping found
+- Unnamed (bounce-c85-jeacyh@mail.codisto.com) — ₹799 — same marketplace-sync
+  pattern, no Slack order ping found
 
 ## New customers — 2026-07-20 (Shopify)
 - Amit Bhola — ₹783.02 (Amazon, Pre+Probiotics 120g, ship by 22/07)

@@ -6,6 +6,25 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+## 2026-07-21
+- Ran the daily VitalPaws report for 2026-07-21 (Meta ads, Shopify, full
+  Slack sweep across 15 channels with thread-level detail, CRM updates,
+  storyline progress).
+- Confirmed the repo-memory backlog has grown to PR #13 (11 unmerged PRs,
+  #3–#13); fetched PR #13's branch (the chain's tip) and reset this session's
+  branch onto it to preserve continuity, same pattern as prior sessions. Did
+  not merge to `main` (needs human write access / explicit go-ahead) —
+  flagged again, now 7+ consecutive sessions.
+- Surfaced two notable risk items in today's sweep: a test order (Amar,
+  ₹1,678) caught before shipping by Shiva, and an existing customer (Charmi
+  Maru) directly questioning site legitimacy after two missed deliveries.
+- Updated memory/metrics-ledger.md, memory/storylines.md, memory/customers.md
+  for 2026-07-21; wrote slack-digests/2026-07-21.md; prepended
+  slack-digests/MEMORY.md.
+- Posted the combined report to #vitalpaws-core and flagged the escalating
+  PR backlog + Charmi Maru trust complaint to the user directly (push
+  notification).
+
 ## 2026-07-20
 - Ran the daily VitalPaws report for 2026-07-20 (Meta ads, Shopify, full Slack
   sweep across 15 channels with thread-level detail, CRM updates, storyline

@@ -6,18 +6,17 @@ This repo doubles as persistent memory for a daily Slack summarization routine o
 the `thepurepaws` workspace. The execution environment is ephemeral, so committed
 files are the only durable memory between runs.
 
-**At the start of any session that involves Slack context, load the memory:**
-read `slack-digests/MEMORY.md` (rolling recap), the latest `slack-digests/YYYY-MM-DD.md`,
-and the `memory/` files below. Each report is a continuing story that builds on the day before.
+**Memory now lives in Supabase (not git files) so it never dilutes.**
+Project `xjtnvapoiofzldgocgam`, schema `report`, tables:
+- `report.daily_report` — one row per day (title, story_so_far, full report_md).
+- `report.metrics` — one row per day (spend, ROAS, revenue, blended, orders); used for trends.
+- `report.customer` — CRM index of customers/VIPs (deduped by name).
+- `report.storyline` — ongoing arcs + trends; advance each arc daily.
+- `report.worklog` — Claude session notes; the report's "🤖 Claude sessions" section is built from it.
 
-- `memory/storylines.md` — ongoing arcs + company vision; advance each arc daily.
-- `memory/metrics-ledger.md` — one row per day (spend, ROAS, revenue, blended); used for trends.
-- `memory/customers.md` — CRM index of notable customers/VIPs (deduped by name).
-- `memory/claude-worklog.md` — every session appends a short dated note of what it did; the report summarizes it.
-- `routines/daily-report.md` — the full, authoritative routine prompt. Follow it exactly.
-
-**Before ending any working session, append a short dated entry to `memory/claude-worklog.md`**
-(what you did) and commit it — the daily report's "🤖 Claude sessions" section is built from it.
+At the start of a report run, READ yesterday from these tables; at the end, WRITE today back
+to them (see `routines/daily-report.md`, the authoritative routine prompt). The old
+`slack-digests/` and `memory/*.md` files are historical seed only — do not rely on them.
 
 ### The daily routine (runs ~12 AM IST, ideally via a scheduled Claude session)
 1. Sweep all Slack channels (public + private, **no DMs**) for the last 24h.

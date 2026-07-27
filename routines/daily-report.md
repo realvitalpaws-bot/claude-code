@@ -93,6 +93,15 @@ STEP 0). Do NOT try to read chat sessions from any IDE or website — they are n
 If no worklog rows for YDAY, write "No Claude sessions logged." Put this in the post as
 "🤖 CLAUDE SESSIONS".
 
+STEP 4c — CX / VET REMARKS from the CRM sheet
+Read the "VP Master CRM 2026" Google Sheet (file id 1Ks6wd9u7iuPmnsuKXPhScbG8Qebl4muPbmHokM0QLqE)
+via the Google Drive tool (read_file_content). It has customer post-order call notes, an
+"Additional Remarks ( krishna)" column, and a Vet Consultation log. Pull the NEWEST remarks —
+any dated on/around YDAY (dates appear inline like "22 july", "25-Jul-2026", "24/06"). Surface
+them, flagging anything urgent (toxicity, hospital admission, fever, RTO spikes, unhappy/refund).
+Use this only for context + the remarks section; do not invent. Put the latest ones in the post
+as the "📝 CX / VET REMARKS" section (skip if nothing new near YDAY).
+
 STEP 5 — STORYLINE / PROGRESS ("episode recap")
 For each arc in report.storyline: one line on what happened YDAY + trend (up/flat/down).
 Then 2-3 sentences "Where we are": how YDAY moved us toward the vision, honest about risks.
@@ -126,6 +135,7 @@ Format:
 ━━━━━━━━━━━━━━━━━━━━━━━
 🗣 *KEY UPDATES* — • ...
 🎬 *CONTENT* — • ...
+📝 *CX / VET REMARKS* — • <latest CRM/vet remark, flag urgent> ...
 📦 *ORDERS & SHIPPING* — • <name> (<status>) ...
 🗓 *STANDUP* — • <person>: ...
 💸 *FINANCES* — • ...

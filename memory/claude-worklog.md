@@ -13,3 +13,6 @@ session must log itself here and commit.
 - Fixed the IST date off-by-one (compute YDAY in Asia/Kolkata).
 - Excluded #finance-dept and #exec-chat from the sweep.
 - Posted the report to #vitalpaws-core; sent test previews to Sudheer.
+
+## 2026-08-05
+- Recorded an OOO note: `<@U0BDZ8G6YDQ>` is out sick today. Created memory/team-ooo.md as a lightweight team availability log so the daily standup/digest reflects absences instead of flagging them as "late" or missing. No real-name mapping exists for this Slack ID in the repo, so it's referenced by ID.

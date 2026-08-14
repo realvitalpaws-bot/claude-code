@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Will You Go Out With Me?</title>
+<style>
+  :root {
+    --bg: #FBF1EE;
+    --glow: #F6DDE1;
+    --ink: #46232F;
+    --muted: #9A6D7C;
+    --accent: #C2255C;
+    --accent-hover: #A61E4D;
+    --accent-ink: #FFF5F8;
+    --heart: #E5789E;
+    --edge: rgba(70, 35, 47, 0.22);
+    --shadow: rgba(166, 30, 77, 0.22);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #241019;
+      --glow: #381A26;
+      --ink: #F7E1E9;
+      --muted: #C08CA0;
+      --accent: #F06595;
+      --accent-hover: #F783AC;
+      --accent-ink: #2B0A17;
+      --heart: #B24C6F;
+      --edge: rgba(247, 225, 233, 0.28);
+      --shadow: rgba(0, 0, 0, 0.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #241019;
+    --glow: #381A26;
+    --ink: #F7E1E9;
+    --muted: #C08CA0;
+    --accent: #F06595;
+    --accent-hover: #F783AC;
+    --accent-ink: #2B0A17;
+    --heart: #B24C6F;
+    --edge: rgba(247, 225, 233, 0.28);
+    --shadow: rgba(0, 0, 0, 0.45);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: radial-gradient(120vmax 90vmax at 50% -20%, var(--glow), var(--bg) 60%) var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow: hidden;
+  }
+
+  #fx {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .stage {
+    position: relative;
+    z-index: 1;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .letter {
+    max-width: 38rem;
+    display: grid;
+    justify-items: center;
+    gap: 1.1rem;
+  }
+
+  .pulse {
+    font-size: 2.6rem;
+    line-height: 1;
+    color: var(--accent);
+    animation: beat 1.3s ease-in-out infinite;
+    user-select: none;
+  }
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    28%      { transform: scale(1.22); }
+    46%      { transform: scale(1.04); }
+    64%      { transform: scale(1.18); }
+  }
+
+  .eyebrow {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 650;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 0;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2.1rem, 6.5vw, 3.6rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  .sub {
+    margin: 0;
+    min-height: 1.5em;
+    font-size: 1.05rem;
+    color: var(--muted);
+  }
+
+  .choices {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  .btn {
+    font: 650 1.1rem/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: 1.05rem 2.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .yes {
+    border: 2px solid transparent;
+    background: var(--accent);
+    color: var(--accent-ink);
+    box-shadow: 0 12px 28px var(--shadow);
+    transform: scale(var(--s, 1));
+    transition: transform 0.2s ease, background 0.2s ease;
+    transform-origin: center;
+  }
+  .yes:hover { background: var(--accent-hover); transform: scale(calc(var(--s, 1) * 1.05)); }
+  .yes:active { transform: scale(calc(var(--s, 1) * 0.97)); }
+
+  .no {
+    border: 2px solid var(--edge);
+    background: transparent;
+    color: var(--muted);
+    z-index: 3;
+    transition: left 0.18s cubic-bezier(0.2, 0.7, 0.3, 1.25),
+                top 0.18s cubic-bezier(0.2, 0.7, 0.3, 1.25);
+  }
+
+  .outcome h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pulse { animation: none; }
+    .yes, .no { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<main class="stage">
+  <div class="letter" id="letter">
+    <span class="pulse" id="pulse" aria-hidden="true">&#9829;</span>
+    <p class="eyebrow" id="eyebrow">A very important question</p>
+    <h1 id="q">Will you go out on a date with me?</h1>
+    <p class="sub" id="sub">There is only one right answer.</p>
+    <div class="choices" id="choices">
+      <button class="btn yes" id="yes" type="button">Yes</button>
+      <button class="btn no" id="no" type="button">No</button>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  var yes = document.getElementById('yes');
+  var no = document.getElementById('no');
+  var sub = document.getElementById('sub');
+  var q = document.getElementById('q');
+  var eyebrow = document.getElementById('eyebrow');
+  var pulse = document.getElementById('pulse');
+  var letter = document.getElementById('letter');
+  var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- the No button never gets caught ---- */
+  var dodges = 0;
+  var lastFlee = 0;
+  var labels = ['No', 'Nope', 'Nuh-uh', 'Too slow!', 'Nice try', 'Not a chance',
+                'Still no', 'Really?', 'Give up', 'The other one…'];
+  var quips = [
+    'It ran away. Interesting.',
+    'The No button seems nervous.',
+    'You can chase it all day. It trains for this.',
+    'The Yes button, meanwhile, is right there.',
+    'That button has commitment issues.',
+    'It is faster than you. It will always be faster.',
+    'At this point, Yes is simply less cardio.',
+    'The universe is trying to tell you something.'
+  ];
+
+  function flee(e) {
+    var now = performance.now();
+    if (now - lastFlee < 80) return;
+    lastFlee = now;
+    dodges++;
+
+    var b = no.getBoundingClientRect();
+    if (no.style.position !== 'fixed') {
+      no.style.position = 'fixed';
+      no.style.left = b.left + 'px';
+      no.style.top = b.top + 'px';
+      no.style.margin = '0';
+    }
+
+    var pad = 14;
+    var px = (e && typeof e.clientX === 'number') ? e.clientX : b.left + b.width / 2;
+    var py = (e && typeof e.clientY === 'number') ? e.clientY : b.top + b.height / 2;
+    var x, y, tries = 0;
+    do {
+      x = pad + Math.random() * Math.max(1, innerWidth - b.width - pad * 2);
+      y = pad + Math.random() * Math.max(1, innerHeight - b.height - pad * 2);
+      tries++;
+    } while (tries < 30 && Math.hypot(x + b.width / 2 - px, y + b.height / 2 - py) < 220);
+
+    no.style.left = x + 'px';
+    no.style.top = y + 'px';
+    no.textContent = labels[Math.min(dodges, labels.length - 1)];
+    sub.textContent = quips[Math.min(dodges - 1, quips.length - 1)];
+    yes.style.setProperty('--s', Math.min(1 + dodges * 0.05, 1.5));
+  }
+
+  no.addEventListener('pointerenter', flee);
+  no.addEventListener('pointerdown', function (e) { e.preventDefault(); flee(e); });
+  no.addEventListener('focus', flee);
+  no.addEventListener('click', function (e) { e.preventDefault(); flee(e); });
+  no.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+    flee(e.touches && e.touches[0]);
+  }, { passive: false });
+
+  addEventListener('resize', function () {
+    if (no.style.position === 'fixed' && no.isConnected) {
+      var b = no.getBoundingClientRect();
+      no.style.left = Math.min(Math.max(14, b.left), innerWidth - b.width - 14) + 'px';
+      no.style.top = Math.min(Math.max(14, b.top), innerHeight - b.height - 14) + 'px';
+    }
+  });
+
+  /* ---- saying yes ---- */
+  yes.addEventListener('click', function () {
+    var r = yes.getBoundingClientRect();
+    document.getElementById('choices').remove();
+    letter.classList.add('outcome');
+    pulse.textContent = '💘';
+    eyebrow.textContent = 'Congratulations to us';
+    q.textContent = 'It’s a date!';
+    sub.textContent = dodges > 0
+      ? 'And it only took ' + dodges + ' dodge' + (dodges === 1 ? '' : 's') + ' to get here.'
+      : 'An excellent decision, honestly.';
+    burst(r.left + r.width / 2, r.top + r.height / 2);
+  });
+
+  /* ---- canvas hearts: ambient drift + yes-burst ---- */
+  var cv = document.getElementById('fx');
+  var cx = cv.getContext('2d');
+  var W, H;
+
+  function size() {
+    var dpr = devicePixelRatio || 1;
+    W = innerWidth; H = innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    cx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  size();
+  addEventListener('resize', size);
+
+  var pal = {};
+  function readPal() {
+    var s = getComputedStyle(document.documentElement);
+    pal.heart = s.getPropertyValue('--heart').trim();
+    pal.accent = s.getPropertyValue('--accent').trim();
+  }
+  readPal();
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
+    setTimeout(readPal, 50);
+  });
+
+  function newDrift(fromBottom) {
+    return {
+      x: Math.random() * W,
+      y: fromBottom ? H + 30 : Math.random() * H,
+      s: 9 + Math.random() * 15,
+      v: 0.18 + Math.random() * 0.45,
+      o: 0.05 + Math.random() * 0.1,
+      w: Math.random() * 6.28,
+      ws: 0.3 + Math.random() * 0.8
+    };
+  }
+
+  var drift = [];
+  var parts = [];
+  if (!reduced) for (var i = 0; i < 16; i++) drift.push(newDrift(false));
+
+  function burst(bx, by) {
+    if (reduced) return;
+    for (var i = 0; i < 150; i++) {
+      var a = Math.random() * Math.PI * 2;
+      var sp = 3 + Math.random() * 8.5;
+      parts.push({
+        x: bx, y: by,
+        vx: Math.cos(a) * sp,
+        vy: Math.sin(a) * sp - 3.2,
+        g: 0.16,
+        s: 8 + Math.random() * 15,
+        o: 1 + Math.random() * 0.5,
+        c: Math.random() < 0.5 ? pal.accent : pal.heart
+      });
+    }
+  }
+
+  function tick() {
+    cx.clearRect(0, 0, W, H);
+    for (var i = 0; i < drift.length; i++) {
+      var d = drift[i];
+      d.y -= d.v;
+      d.w += d.ws * 0.02;
+      if (d.y < -30) drift[i] = d = newDrift(true);
+      cx.globalAlpha = d.o;
+      cx.fillStyle = pal.heart;
+      cx.font = d.s + 'px serif';
+      cx.fillText('♥', d.x + Math.sin(d.w) * 16, d.y);
+    }
+    for (var j = parts.length - 1; j >= 0; j--) {
+      var p = parts[j];
+      p.x += p.vx; p.y += p.vy;
+      p.vy += p.g; p.vx *= 0.99;
+      p.o -= 0.008;
+      if (p.o <= 0 || p.y > H + 40) { parts.splice(j, 1); continue; }
+      cx.globalAlpha = Math.min(1, p.o);
+      cx.fillStyle = p.c;
+      cx.font = p.s + 'px serif';
+      cx.fillText('♥', p.x, p.y);
+    }
+    cx.globalAlpha = 1;
+    requestAnimationFrame(tick);
+  }
+  if (!reduced) requestAnimationFrame(tick);
+})();
+</script>
+
+</body>
+</html>

@@ -16,6 +16,10 @@ session must log itself here and commit.
   routines/budget-alert.md.
 - Identified the "thinura" project (`thinura-d34e1`): a Firebase project on the same
   billing account with its own pre-existing budget.
+- First budget check (18:00 UTC): vital-paws August spend is ₹10,583.99 — already OVER
+  the ₹10,000 budget (100% threshold). Posted the alert to #vitalpaws-core.
+  Dedupe note: threshold 1.0 reported for Aug 2026 — do not re-post unless a higher
+  overspend milestone is worth flagging.
 
 ## 2026-06-23
 - Built the daily Slack digest + persistent memory system (slack-digests/, MEMORY.md, CLAUDE.md).

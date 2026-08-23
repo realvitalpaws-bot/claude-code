@@ -17,9 +17,9 @@ and warns the team in Slack before the bill gets big.
 
 ## How alerts reach Slack
 
-A scheduled Claude routine (`vital-paws budget alert → Slack`, every 6 hours,
-fires into the session that built this) pulls the subscription, and when a new
-threshold is crossed for the month, posts a plain-English alert to
+A scheduled Claude routine (`vital-paws budget alert → Slack`, once per week
+on Mondays at 6 AM UTC, fires into the session that built this) pulls the subscription,
+and when a new threshold is crossed for the month, posts a plain-English alert to
 **#vitalpaws-core** (`C09QHHR2R5J`). Each threshold is announced only once per month.
 
 Fallback: if that run has no Slack access, it leaves a

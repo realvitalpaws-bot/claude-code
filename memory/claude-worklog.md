@@ -6,6 +6,12 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+## 2026-08-23
+- Reduced GCP budget alert routine frequency from every 6 hours to once per week
+  (Mondays 6 AM UTC). Deduplication logic prevents duplicate alerts for same threshold
+  within calendar month. Updated trigger `trig_01Q2Agz8Nm2fHvyAx8E4AWGa` and documented
+  in routines/budget-alert.md.
+
 ## 2026-08-18
 - Set up a GCP budget alert for the `vital-paws` project: ₹10,000/month budget on the
   "Firebase Payment" billing account, alert thresholds at 50% / 90% / 100%.

@@ -6,6 +6,27 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+## 2026-08-23
+- Reduced GCP budget alert routine frequency from every 6 hours to once per week
+  (Mondays 6 AM UTC). Deduplication logic prevents duplicate alerts for same threshold
+  within calendar month. Updated trigger `trig_01Q2Agz8Nm2fHvyAx8E4AWGa` and documented
+  in routines/budget-alert.md.
+
+## 2026-08-18
+- Set up a GCP budget alert for the `vital-paws` project: ₹10,000/month budget on the
+  "Firebase Payment" billing account, alert thresholds at 50% / 90% / 100%.
+- Wired budget notifications to Pub/Sub topic `vital-paws-budget-alerts` + pull
+  subscription `vital-paws-budget-alerts-sub`.
+- Created a 6-hourly scheduled Claude routine that pulls the subscription and posts
+  threshold alerts to #vitalpaws-core (one post per threshold per month). Details in
+  routines/budget-alert.md.
+- Identified the "thinura" project (`thinura-d34e1`): a Firebase project on the same
+  billing account with its own pre-existing budget.
+- First budget check (18:00 UTC): vital-paws August spend is ₹10,583.99 — already OVER
+  the ₹10,000 budget (100% threshold). Posted the alert to #vitalpaws-core.
+  Dedupe note: threshold 1.0 reported for Aug 2026 — do not re-post unless a higher
+  overspend milestone is worth flagging.
+
 ## 2026-06-23
 - Built the daily Slack digest + persistent memory system (slack-digests/, MEMORY.md, CLAUDE.md).
 - Created the combined daily report routine (Meta ads + Shopify + team summary): routines/daily-report.md.

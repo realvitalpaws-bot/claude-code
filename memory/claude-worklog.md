@@ -11,7 +11,10 @@ session must log itself here and commit.
 - Styled it to the existing VitalPaws page system (Lato, navy #1b2a4f, cream #fdf8e6, green accent) instead of the mockup's orange/cyan, so it matches stop-the-itch and the other landing pages.
 - Form writes to a new Supabase table `DogRunRegistration` (insert-only RLS), same pattern as the Reunite tag registration page and BarkingLotEventRSVP.
 - Files: events/dog-run-registration.html (Shopify-ready) + events/dog-run-registration.sql (migration).
-- Not published to Shopify and migration not run — waiting on Shiva's preview + the event date, which the brief doesn't state.
+- Rewrote the page copy entirely after feedback that the offer wasn't clear. Ran the offer skeleton first: promise = "one morning where he's not the only dog on the street", villain = city dogs walking the same three streets alone, ask = ₹99 paid upfront, risk reversal = full refund up to 48h + rain reschedule.
+- New structure: hero → why we're doing this → what ₹99 gets you → how the morning goes → guarantee → FAQ → form. Payment moved to upfront Shopify checkout (form saves to Supabase first, then hands off to cart).
+- Unknown facts (event date, times, early-bird cut-off, spot count) are wrapped in a loud yellow `.vp-tbc` marker so none can ship unfilled.
+- Preview only — nothing pushed, no Shopify page, no Supabase table, no product created.
 
 ## 2026-06-23
 - Built the daily Slack digest + persistent memory system (slack-digests/, MEMORY.md, CLAUDE.md).

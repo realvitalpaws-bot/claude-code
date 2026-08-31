@@ -1,4 +1,5 @@
--- The 1.5KM Dog Run — registration storage
+-- PAWATHON — 1.5KM Dog Run (Necklace Road, Hyderabad · 18 Oct 2026)
+-- registration storage
 -- Mirrors the existing public."BarkingLotEventRSVP" pattern:
 -- RLS on, anon may INSERT only (no public SELECT of registrant data).
 

@@ -16,7 +16,9 @@ session must log itself here and commit.
 - Unknown facts (event date, times, early-bird cut-off, spot count) are wrapped in a loud yellow `.vp-tbc` marker so none can ship unfilled.
 - Updated with real event facts: 1.5KM (renamed from 1KM), 6–10 AM, early bird ₹199 until 25 Sep then ₹299.
 - Added two offer items: the VitalPaws Geo-Tag (retails ₹199 — used as the price anchor, since the tag alone costs what the ticket costs) and seven support hubs every 200m with volunteers, water and first aid, given their own navy section with an SVG route diagram.
-- Preview only — nothing pushed, no Shopify page, no Supabase table, no product created.
+- Renamed the event PAWATHON and built a wordmark for it (paw print set inside the O, paw-track trail leading in). Locked the date: Sunday 18 October 2026, shown in a date tile in the hero, the trust strip, the footer and the sticky bar.
+- Added artwork to every section, all hand-drawn inline SVG off one reusable paw symbol: hero paw trail + background paws, a "same loop, twice a day" diagram for the problem section, dawn/run/photo icons on the timeline, a shield-with-paw for the guarantee, a speech-bubble-with-paw for the FAQ, and icons on each form group.
+- Preview only — nothing pushed to Shopify, no Supabase table, no product created. Draft PR #18 tracks the work.
 
 ## 2026-06-23
 - Built the daily Slack digest + persistent memory system (slack-digests/, MEMORY.md, CLAUDE.md).

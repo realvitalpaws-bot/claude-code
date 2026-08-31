@@ -55,6 +55,8 @@
 .vp-page .vp-gets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 940px; margin: 0 auto; }
 .vp-page .vp-get { background: #fff; border: 1px solid #e8e0c0; border-radius: 14px; padding: 28px 20px 24px; text-align: center; transition: transform .14s ease, box-shadow .14s ease; }
 .vp-page .vp-get:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(27,42,79,0.10); }
+.vp-page .vp-get.feat { border: 2px solid #28a93d; box-shadow: 0 10px 24px rgba(40,169,61,0.14); position: relative; }
+.vp-page .vp-get .vp-get-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: #28a93d; color: #fff; font-size: 10px; font-weight: 900; line-height: 1.6; padding: 4px 12px; border-radius: 999px; letter-spacing: 0.1em; white-space: nowrap; display: inline-block; width: auto; }
 .vp-page .vp-get-ico { width: 62px; height: 62px; margin: 0 auto 15px; background: #fdf8e6; border: 1px solid #f0e9c5; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .vp-page .vp-get-ico svg { width: 34px; height: 34px; display: block; }
 .vp-page .vp-get strong { display: block; font-size: 15.5px; font-weight: 900; color: #1b2a4f; margin-bottom: 5px; letter-spacing: -0.01em; }
@@ -71,6 +73,17 @@
 .vp-page .vp-step .time { display: inline-block; background: #1b2a4f; color: #fff; padding: 5px 13px; border-radius: 999px; font-size: 11px; font-weight: 900; letter-spacing: 0.08em; margin-bottom: 14px; }
 .vp-page .vp-step h3 { font-size: 18px; margin-bottom: 7px; }
 .vp-page .vp-step p { font-size: 14.5px; color: #3d4663; margin: 0; }
+
+/* ---------- support hubs ---------- */
+.vp-page .vp-hubs { background: #1b2a4f; color: #fff; }
+.vp-page .vp-hubs h2 { color: #fff; }
+.vp-page .vp-hubs > .vp-wrap > p { color: rgba(255,255,255,0.85); max-width: 620px; margin-left: auto; margin-right: auto; }
+.vp-page .vp-hubs .vp-eyebrow { color: #fff; opacity: 0.55; }
+.vp-page .vp-route { max-width: 900px; margin: 36px auto 0; }
+.vp-page .vp-route svg { width: 100%; height: auto; display: block; }
+.vp-page .vp-hub-pts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 840px; margin: 36px auto 0; }
+.vp-page .vp-hub-pt strong { display: block; color: #fff; font-size: 15.5px; font-weight: 900; margin-bottom: 5px; }
+.vp-page .vp-hub-pt span { font-size: 14px; color: rgba(255,255,255,0.72); line-height: 1.5; }
 
 /* ---------- guarantee ---------- */
 .vp-page .vp-guar { background: #fff; text-align: center; }
@@ -168,6 +181,8 @@
   .vp-page .vp-get-ico svg { width: 27px; height: 27px; }
   .vp-page .vp-get strong { grid-column: 2; align-self: end; margin-bottom: 3px; }
   .vp-page .vp-get span { grid-column: 2; align-self: start; }
+  .vp-page .vp-get .vp-get-badge { left: auto; right: 14px; transform: none; }
+  .vp-page .vp-hub-pts { grid-template-columns: 1fr; gap: 20px; text-align: center; }
 }
 
 @media (max-width: 768px) {
@@ -185,17 +200,18 @@
 </style>
 
 <div class="vp-trust-strip">
-  <span>📍 Necklace Road</span> · <span>🏃 1 KM, not a race</span> · <span>🐶 Every breed, every size</span>
+  <span>📍 Necklace Road</span> · <span>🕕 6–10 AM</span> · <span>🏃 1.5 KM, not a race</span> · <span>🐶 Every breed</span>
 </div>
 
 <section class="vp-hero">
   <div class="vp-hero-inner">
-    <div class="vp-kicker">🐾 The 1KM Dog Run · Hyderabad</div>
+    <div class="vp-kicker">🐾 The 1.5KM Dog Run · Hyderabad</div>
     <h1>One morning where he's <span class="accent">not the only dog on the street.</span></h1>
-    <p class="vp-hero-sub">A 1KM run down Necklace Road with a few hundred other dogs and the people who love them. Not a race. No timing chip. Just your dog, off his usual route, losing his mind in the best way.</p>
+    <p class="vp-hero-sub">A 1.5KM run down Necklace Road with a few hundred other dogs and the people who love them. Not a race. No timing. Just your dog, off his usual route, losing his mind in the best way.</p>
     <div class="vp-hero-cta">
-      <a href="#register" class="vp-btn">Grab our spot — ₹99</a>
-      <small><s>₹199</s> ₹99 until <mark class="vp-tbc">[EARLY BIRD END DATE]</mark> · <mark class="vp-tbc">[N]</mark> spots total</small>
+      <a href="#register" class="vp-btn">Grab our spot — ₹199</a>
+      <small>6–10 AM · ₹199 until 25 September, then ₹299 · <mark class="vp-tbc">[N]</mark> spots</small>
+      <small style="color:#28a93d;font-weight:900;">Includes a VitalPaws Geo-Tag — ₹199 on its own.</small>
     </div>
   </div>
 </section>
@@ -216,8 +232,9 @@
 <section class="vp-section vp-deal">
   <div class="vp-wrap">
     <div style="text-align:center;max-width:620px;margin:0 auto 34px;">
-      <div class="vp-eyebrow">What ₹99 gets you</div>
+      <div class="vp-eyebrow">What ₹199 gets you</div>
       <h2>One ticket. Both of you.</h2>
+      <p style="max-width:560px;margin:14px auto 0;">The Geo-Tag alone sells for ₹199. Everything next to it is the part you're not paying for.</p>
     </div>
     <div class="vp-gets">
 
@@ -230,8 +247,27 @@
             <path d="M35 8h8l-2.6 3.2L43 14.5h-8z" fill="#1b2a4f"/>
           </svg>
         </div>
-        <strong>The 1KM, together</strong>
+        <strong>The 1.5KM, together</strong>
         <span>Entry for you and your dog, along Necklace Road</span>
+      </div>
+
+      <div class="vp-get feat">
+        <span class="vp-get-badge">WORTH ₹199</span>
+        <div class="vp-get-ico">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="10" cy="9" r="3.2" stroke="#1b2a4f" stroke-width="2.2"/>
+            <path d="M12.5 13.5l4 5" stroke="#1b2a4f" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="19" cy="27" r="11" stroke="#1b2a4f" stroke-width="2.4"/>
+            <circle cx="19" cy="29.4" r="2.6" fill="#28a93d"/>
+            <circle cx="15.6" cy="25.9" r="1.4" fill="#28a93d"/>
+            <circle cx="19" cy="24.7" r="1.4" fill="#28a93d"/>
+            <circle cx="22.4" cy="25.9" r="1.4" fill="#28a93d"/>
+            <path d="M34 19a9 9 0 010 14" stroke="#28a93d" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M38.5 14.5a15 15 0 010 23" stroke="#28a93d" stroke-width="2.4" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <strong>A VitalPaws Geo-Tag</strong>
+        <span>Yours to keep. If your dog is ever lost, whoever finds him taps the tag and you get an email with where they are.</span>
       </div>
 
       <div class="vp-get">
@@ -276,18 +312,6 @@
       <div class="vp-get">
         <div class="vp-get-ico">
           <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-            <path d="M24 8c3.2 4.8 5.2 7.6 5.2 10.2a5.2 5.2 0 01-10.4 0C18.8 15.6 20.8 12.8 24 8z" fill="#28a93d"/>
-            <path d="M8 26h32l-3.2 12.4a2.5 2.5 0 01-2.4 1.9H13.6a2.5 2.5 0 01-2.4-1.9z" stroke="#1b2a4f" stroke-width="2.4" stroke-linejoin="round"/>
-            <path d="M12.5 31h23" stroke="#1b2a4f" stroke-width="2.2" stroke-linecap="round" opacity="0.35"/>
-          </svg>
-        </div>
-        <strong>Water and shade</strong>
-        <span>Bowls and a rest zone waiting at the finish</span>
-      </div>
-
-      <div class="vp-get">
-        <div class="vp-get-ico">
-          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
             <path d="M8 13.5A3.5 3.5 0 0111.5 10h16a3.5 3.5 0 013.5 3.5v8a3.5 3.5 0 01-3.5 3.5H17l-6 4.5V25a3.5 3.5 0 01-3-3.5z" stroke="#1b2a4f" stroke-width="2.4" stroke-linejoin="round"/>
             <path d="M22 25.5a3.5 3.5 0 013.5-3.5H37a3.5 3.5 0 013.5 3.5v7a3.5 3.5 0 01-3.5 3.5v4.3L31 36h-5.5a3.5 3.5 0 01-3.5-3.5z" fill="#28a93d" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/>
           </svg>
@@ -299,8 +323,8 @@
     </div>
 
     <div class="vp-deal-price">
-      <div class="num">₹99<s>₹199</s></div>
-      <div class="when">₹99 until <mark class="vp-tbc">[EARLY BIRD END DATE]</mark>. ₹199 after that.</div>
+      <div class="num">₹199<s>₹299</s></div>
+      <div class="when">Early bird, until <strong style="color:#1b2a4f;">25 September</strong>. ₹299 after that — you save ₹100.</div>
     </div>
   </div>
 </section>
@@ -308,22 +332,67 @@
 <section class="vp-section vp-how">
   <div class="vp-wrap" style="text-align:center;">
     <div class="vp-eyebrow">How the morning goes</div>
-    <h2>You'll be home by <mark class="vp-tbc">[TIME]</mark>.</h2>
+    <h2>Gates at 6. Done by 10.</h2>
     <div class="vp-steps" style="text-align:left;">
       <div class="vp-step">
-        <span class="time"><mark class="vp-tbc">[TIME]</mark></span>
+        <span class="time">6:00 – 7:00 AM</span>
         <h3>Check in</h3>
-        <p>Collect your tee and your dog's goodie bag. Say hello. Let the dogs get the sniffing out of their system.</p>
+        <p>Collect your tee, your dog's goodie bag and his Geo-Tag. Say hello. Let the dogs get the sniffing out of their system.</p>
       </div>
       <div class="vp-step">
-        <span class="time"><mark class="vp-tbc">[TIME]</mark></span>
-        <h3>The 1KM</h3>
+        <span class="time"><mark class="vp-tbc">[FLAG-OFF TIME]</mark></span>
+        <h3>The 1.5KM</h3>
         <p>We set off together. No timing, no positions, no medals. Walking the whole thing is completely normal. Stopping to sniff is expected.</p>
       </div>
       <div class="vp-step">
-        <span class="time"><mark class="vp-tbc">[TIME]</mark></span>
-        <h3>Water and photos</h3>
-        <p>Rest in the shade, get your dog photographed, and meet the people whose dogs your dog just spent a morning with.</p>
+        <span class="time">UNTIL 10:00 AM</span>
+        <h3>Photos, then hang around</h3>
+        <p>Rest in the shade, get your dog photographed, and meet the people whose dogs your dog just spent a morning with. Leave whenever you like.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="vp-section vp-hubs">
+  <div class="vp-wrap" style="text-align:center;">
+    <div class="vp-eyebrow">Along the route</div>
+    <h2>You're never more than 200 metres from help.</h2>
+    <p>Seven support hubs, one every 200 metres, start to finish. Because things happen — a cut paw, a dog that's had enough, a leash that slips — and you shouldn't have to sort it out on your own.</p>
+
+    <div class="vp-route">
+      <svg viewBox="0 0 880 120" fill="none" aria-hidden="true">
+        <path d="M52 58H828" stroke="rgba(255,255,255,0.30)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12"/>
+        <path d="M52 44V36h97v8" stroke="rgba(255,255,255,0.3)" stroke-width="1.6"/>
+        <text x="100" y="28" fill="rgba(255,255,255,0.75)" font-size="14" font-weight="700" text-anchor="middle" font-family="Lato, sans-serif">200 m</text>
+        <circle cx="52" cy="58" r="7" fill="#fff"/>
+        <text x="52" y="90" fill="rgba(255,255,255,0.7)" font-size="13" font-weight="900" text-anchor="middle" font-family="Lato, sans-serif" letter-spacing="1">START</text>
+        <g><circle cx="149" cy="58" r="10" fill="#28a93d"/><path d="M149 53v10M144 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <g><circle cx="246" cy="58" r="10" fill="#28a93d"/><path d="M246 53v10M241 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <g><circle cx="343" cy="58" r="10" fill="#28a93d"/><path d="M343 53v10M338 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <g><circle cx="440" cy="58" r="10" fill="#28a93d"/><path d="M440 53v10M435 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <g><circle cx="537" cy="58" r="10" fill="#28a93d"/><path d="M537 53v10M532 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <g><circle cx="634" cy="58" r="10" fill="#28a93d"/><path d="M634 53v10M629 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <g><circle cx="731" cy="58" r="10" fill="#28a93d"/><path d="M731 53v10M726 58h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g>
+        <path d="M828 58V26" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        <path d="M828 27h22l-7 7.5 7 7.5h-22z" fill="#fff"/>
+        <circle cx="828" cy="58" r="7" fill="#fff"/>
+        <text x="828" y="90" fill="rgba(255,255,255,0.7)" font-size="13" font-weight="900" text-anchor="middle" font-family="Lato, sans-serif" letter-spacing="1">FINISH</text>
+      </svg>
+    </div>
+
+    <div class="vp-hub-pts">
+      <div class="vp-hub-pt">
+        <strong>Volunteers at every hub</strong>
+        <span>Seven of them along the route, so there's always someone within sight.</span>
+      </div>
+      <div class="vp-hub-pt">
+        <strong>Water and first aid</strong>
+        <span>For your dog and for you. You don't have to carry any of it.</span>
+      </div>
+      <div class="vp-hub-pt">
+        <strong>Someone cheering, by name</strong>
+        <span>We take your dog's name at check-in. He'll hear it the whole way round.</span>
       </div>
     </div>
   </div>
@@ -333,7 +402,7 @@
   <div class="vp-guar-badge">
     <h3>Can't make it? You're covered.</h3>
     <p><strong>Full refund up to 48 hours before the run.</strong> Message us on WhatsApp or Instagram — no reasons needed, nothing to fill in.</p>
-    <p style="color:#6b7280;font-size:14.5px;">We'd much rather you come to the next one than lose ₹99 and a Sunday.</p>
+    <p style="color:#6b7280;font-size:14.5px;">We'd much rather you come to the next one than lose ₹199 and a Sunday.</p>
   </div>
 </section>
 
@@ -344,8 +413,10 @@
     <div class="vp-faq-wrap" style="text-align:left;">
       <details><summary>My dog is nervous or reactive around other dogs.</summary><p>There's a quieter group that starts at the back, with space around it. Tell us in the form and we'll put you there. Nobody has to be in the middle of the crowd.</p></details>
       <details><summary>Is it a race?</summary><p>No. There's no timing and no positions. The fastest dog and the slowest dog get exactly the same thing: a tee, a goodie bag, and a very tired evening.</p></details>
-      <details><summary>My dog is small / senior / still a puppy.</summary><p>1KM is short on purpose — it's about twenty minutes at a comfortable walk. Carry them for a stretch if they've had enough. Puppies should have finished their core vaccinations.</p></details>
-      <details><summary>Do I need to be fit?</summary><p>It's one kilometre and you can walk all of it. If you can do your normal evening walk, you can do this.</p></details>
+      <details><summary>My dog is small / senior / still a puppy.</summary><p>1.5KM is short on purpose — about twenty-five minutes at a comfortable walk, and there's a support hub every 200 metres if he's had enough. Carry them for a stretch if you like. Puppies should have finished their core vaccinations.</p></details>
+      <details><summary>Do I need to be fit?</summary><p>It's one and a half kilometres and you can walk all of it. If you can do your normal evening walk, you can do this.</p></details>
+      <details><summary>What is the Geo-Tag, and is it really free?</summary><p>It's the VitalPaws Geo-Tag — an NFC tag for your dog's collar that we sell for ₹199. Tap it with any phone and it opens his page; you get an email the moment someone scans it, with roughly where they are. It's yours to keep, included in the ticket, and we'll help you set it up at check-in.</p></details>
+      <details><summary>Do I have to run the whole thing?</summary><p>No. Walk it, stop at every hub, turn back if your dog is done — nobody is counting. The volunteers are there until the last pair is in.</p></details>
       <details><summary>Can I bring two dogs?</summary><p>Yes, if you can comfortably handle both on leash on your own. Register once and mention it in the form so we pack a second goodie bag.</p></details>
       <details><summary>What if I can't make it after all?</summary><p>Full refund up to 48 hours before the run. Just message us on WhatsApp or Instagram.</p></details>
       <details><summary>Is there parking at Necklace Road?</summary><p>Yes. We'll send the exact meeting point and the closest parking on WhatsApp the day before.</p></details>
@@ -358,7 +429,7 @@
     <div class="vp-form-head">
       <div class="vp-eyebrow">Two minutes, and you're in</div>
       <h2>Book your spot.</h2>
-      <p>₹99 today. We only need the details once — the tee size and your dog's bits help us pack the right bag for you.</p>
+      <p>₹199 today. We only need the details once — the tee size and your dog's name let us pack the right bag and get his Geo-Tag ready for check-in.</p>
     </div>
 
     <form class="vp-form" id="dr-form" novalidate>
@@ -449,7 +520,7 @@
 
       <div class="vp-legend">Your tee, and anything we should know</div>
       <div class="vp-field">
-        <label>Tee size <span class="hint">— for you, not the dog. Included in the ₹99.</span></label>
+        <label>Tee size <span class="hint">— for you, not the dog. Included in the ₹199.</span></label>
         <div class="vp-sizes">
           <input type="radio" id="dr-xs" name="tshirt_size" value="XS"><label for="dr-xs">XS</label>
           <input type="radio" id="dr-s" name="tshirt_size" value="S"><label for="dr-s">S</label>
@@ -479,7 +550,7 @@
       <div class="vp-checks">
         <label class="vp-check" id="dr-c1-wrap">
           <input type="checkbox" id="dr-c1" name="consent_health">
-          <span>My dog is vaccinated and well enough to do 1KM.<span class="req">*</span></span>
+          <span>My dog is vaccinated and well enough to do 1.5KM.<span class="req">*</span></span>
         </label>
         <label class="vp-check" id="dr-c2-wrap">
           <input type="checkbox" id="dr-c2" name="consent_leash">
@@ -495,7 +566,7 @@
         </label>
       </div>
 
-      <button type="submit" class="vp-btn vp-submit" id="dr-submit">Pay ₹99 &amp; confirm our spot</button>
+      <button type="submit" class="vp-btn vp-submit" id="dr-submit">Pay ₹199 &amp; confirm our spot</button>
       <div class="vp-error" id="dr-error"></div>
       <p class="vp-fine">Secure payment. <strong>Full refund up to 48 hours before the run.</strong></p>
     </form>
@@ -508,7 +579,7 @@
         <ol>
           <li>Your confirmation is on its way to your <strong>WhatsApp</strong>.</li>
           <li>The day before, we'll send the <strong>exact meeting point</strong> and where to park.</li>
-          <li>On the morning, come to the check-in desk for your <strong>tee and goodie bag</strong>.</li>
+          <li>Check in between <strong>6 and 7 AM</strong> for your tee, goodie bag and <strong>Geo-Tag</strong>.</li>
         </ol>
       </div>
       <p style="font-size:14.5px;color:#6b7280;">Nothing within a day? DM us on Instagram <strong>@itsvitalpaws</strong> and we'll sort it out.</p>
@@ -518,16 +589,16 @@
 </section>
 
 <section class="vp-foot">
-  <h3>The 1KM Dog Run</h3>
-  <p>Necklace Road, Hyderabad · <mark class="vp-tbc">[EVENT DATE]</mark></p>
+  <h3>The 1.5KM Dog Run</h3>
+  <p>Necklace Road, Hyderabad · <mark class="vp-tbc">[EVENT DATE]</mark> · 6–10 AM</p>
   <p>Organised by <strong>@itsvitalpaws</strong> — Hyderabad's dog wellness community</p>
   <p>Questions? DM us on Instagram or WhatsApp</p>
 </section>
 
 <div class="vp-sticky">
   <div class="vp-sticky-info">
-    <div class="vp-sticky-price">₹99 <s>₹199</s></div>
-    <div class="vp-sticky-meta">REFUNDABLE UP TO 48H BEFORE</div>
+    <div class="vp-sticky-price">₹199 <s>₹299</s></div>
+    <div class="vp-sticky-meta">EARLY BIRD ENDS 25 SEP</div>
   </div>
   <a href="#register" class="vp-btn">Grab our spot</a>
 </div>
@@ -544,8 +615,8 @@
   // Checkout. Registration is always saved to Supabase FIRST, so a
   // dropped payment still leaves us the lead and we can follow up.
   //
-  // TODO before launch: create the "The 1KM Dog Run — Registration"
-  // product (Early Bird ₹99 / Regular ₹199) and paste the early-bird
+  // TODO before launch: create the "The 1.5KM Dog Run — Registration"
+  // product (Early Bird ₹199 until 25 Sep / Regular ₹299) and paste the early-bird
   // variant id here. Until then the page falls back to the old
   // "payment link on WhatsApp" flow instead of showing a broken cart.
   // ---------------------------------------------------------------
@@ -646,7 +717,7 @@
       consent_media: document.getElementById('dr-c3').checked,
       join_whatsapp: document.getElementById('dr-c4').checked,
       ticket_type: 'early_bird',
-      amount: 99
+      amount: 199
     };
 
     fetch(SB_URL + '/rest/v1/' + TABLE, {

@@ -1,4 +1,4 @@
--- The 1KM Dog Run — registration storage
+-- The 1.5KM Dog Run — registration storage
 -- Mirrors the existing public."BarkingLotEventRSVP" pattern:
 -- RLS on, anon may INSERT only (no public SELECT of registrant data).
 
@@ -29,7 +29,7 @@ create table if not exists public."DogRunRegistration" (
   join_whatsapp    boolean not null default false,
 
   ticket_type      text    not null default 'early_bird',
-  amount           integer not null default 99,
+  amount           integer not null default 199,
 
   -- filled in by the team once the WhatsApp payment link is settled
   payment_status   text    not null default 'pending'

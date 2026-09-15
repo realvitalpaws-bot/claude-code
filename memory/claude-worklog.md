@@ -6,6 +6,19 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+## 2026-09-15
+- Studio Hub build continued (Tobechukwu, PM, on Shiva's approval).
+- Merged PR #2 (phase 2: Admin page, team member CRUD) into main.
+- Built phase 3, Drive links: admin add/edit/remove, read for all members,
+  category grouping with Unfiled at the bottom, search across name/category/notes.
+- Pasted addresses normalised; bare domains get https://, non-http(s) schemes refused.
+- No migration needed; existing RLS policies already cover drive_items.
+- Opened draft PR #3 and subscribed to its activity.
+- Reported full project autopsy. Blocker is still Google OAuth: auth.users is 0,
+  nobody has ever signed in. Atharv says a GCP client exists; asked for the four
+  checks (Web client type, Supabase callback URI, In production, scopes limited).
+- Nothing deployed yet, no Vercel project.
+
 ## 2026-09-12
 - Access audit for Studio Internal App build (requested by Tobechukwu, PM, on Shiva's approval).
 - Confirmed Supabase connected: org `realvitalpaws-bot's Org` (bshdkdvqtbdcwazrxzza).

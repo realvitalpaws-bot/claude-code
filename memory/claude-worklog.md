@@ -17,7 +17,24 @@ session must log itself here and commit.
 - Reported full project autopsy. Blocker is still Google OAuth: auth.users is 0,
   nobody has ever signed in. Atharv says a GCP client exists; asked for the four
   checks (Web client type, Supabase callback URI, In production, scopes limited).
-- Nothing deployed yet, no Vercel project.
+- Phase 5, Calendar: agenda grouped by day, everyone adds, you edit your own,
+  admins edit anything. Dates resolve in Asia/Kolkata so evening entries do not
+  slip to the next day; date helpers compiled and verified. Past events capped
+  at 50 behind a disclosure. No migration needed.
+- Fixed two cosmetic faults across all forms: reserved blank message line, and
+  the sidebar truncating long names.
+- Phase 4 spec changed on Tobechukwu's call: Drive uploads run on a Google
+  service account, not user OAuth. drive.file is sensitive, forces verification
+  and Testing mode's 7 day expiry on a non-Workspace Gmail project. Reconnect
+  Drive button dropped. Documented in README, .env.example updated.
+- Corrected: there is no second app in the "The studio app" GCP project. Atharv
+  handed everything to Tobechukwu and his features are now part of Studio Hub.
+- Google OAuth is configured by Tobechukwu; he is running the local sign-in test.
+- Sent the first screenshots of the app; he had seen nothing until now.
+- PR #3 merged. Phase 5 opened as draft PR #4.
+- Sandbox proxy 403s on the Supabase host, so real sign-in and DB reads cannot
+  be tested from here. Local run verifies routing and the auth gate only.
+- Nothing deployed yet, no Vercel project; Tobechukwu has no Vercel access yet.
 
 ## 2026-09-12
 - Access audit for Studio Internal App build (requested by Tobechukwu, PM, on Shiva's approval).

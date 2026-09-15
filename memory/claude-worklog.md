@@ -62,8 +62,21 @@ session must log itself here and commit.
   a lowercased email plus a check constraint enforcing lowercase storage.
   That made check_violation ambiguous with the keep-an-admin trigger, so the
   admin page now distinguishes by constraint name. Draft PR #7.
-- Still outstanding on Tobechukwu's side: Vercel access, Drive service account
-  key + folder ID, ANTHROPIC_API_KEY.
+- PR #7 merged. Supabase main branch cleared MIGRATIONS_FAILED -> FUNCTIONS_DEPLOYED.
+- SCOPE CHANGE from Shiva, relayed by Tobechukwu: drop the Anthropic API from
+  Studio Hub entirely. Those AI features came from Atharv's spec, not from the
+  studio team, and the team already does both in Claude chat for free. Not worth
+  a billed key plus prompts plus failure handling for an internal utility.
+  Scripts becomes a plain draft editor. Reel analysis becomes manual entry with
+  arithmetic comparison. Libraries folded into Workflows and dropped, since it
+  only existed to feed AI context. Final scope: Drive, Calendar, Pipeline,
+  Scripts, Reel analysis, Workflows, Admin.
+- Shipped the deletion half as draft PR #8: ANTHROPIC_API_KEY gone everywhere,
+  scripts.ai_suggestions dropped, libraries table + library_page enum dropped
+  with rows folded into workflows first, nav entry and page deleted.
+- Vercel access is now sorted, Shiva granted it. Deployment unblocked.
+- Still outstanding: Drive service account key + folder ID; and how Vercel
+  access reaches me in practice.
 - Sandbox proxy 403s on the Supabase host, so real sign-in and DB reads cannot
   be tested from here. Local run verifies routing and the auth gate only.
 - Nothing deployed yet, no Vercel project; Tobechukwu has no Vercel access yet.

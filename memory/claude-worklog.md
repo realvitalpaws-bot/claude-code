@@ -75,6 +75,25 @@ session must log itself here and commit.
   scripts.ai_suggestions dropped, libraries table + library_page enum dropped
   with rows folded into workflows first, nav entry and page deleted.
 - Vercel access is now sorted, Shiva granted it. Deployment unblocked.
+- Phase 7 Scripts (PR #9, merged): one plain draft per card in the scripting
+  stage, draft/in review/approved, unique index makes the save an upsert, added
+  updated_at. The page states visibility honestly for cards that are not yours
+  rather than claiming no draft exists.
+- Phase 8 Reel analysis (PR #10, merged): manual entry, typed columns not jsonb,
+  every metric nullable so a blank stays out of the averages, hook rate derived
+  from 3s views over views, check constraint against negative counts, one record
+  per card. Arithmetic compiled and exercised; constraints actively attacked in
+  the preview database (negative refused, duplicate refused, blank and genuine
+  zero both allowed).
+  NOTE: the reel metric list is Claude's choice, not the studio team's. Nobody
+  answered which numbers they track. Confirm before real data lands.
+- STUDIO HUB IS FEATURE COMPLETE EXCEPT DRIVE UPLOADS. Eight of nine phases done.
+  Pages: Home, Drive, Calendar, Pipeline, Scripts, Reel analysis, Workflows,
+  Admin. Seven tables. CI green on every PR. Supabase advisors clean apart from
+  a leaked-password warning that does not apply (no passwords in this app).
+- Outstanding: Drive service account JSON key + folder ID for phase 4; Vercel
+  access (Shiva granted it, but no Vercel connector exists in this session so it
+  has not reached Claude); confirmation of the reel metric list.
 - Still outstanding: Drive service account key + folder ID; and how Vercel
   access reaches me in practice.
 - Sandbox proxy 403s on the Supabase host, so real sign-in and DB reads cannot

@@ -47,8 +47,23 @@ session must log itself here and commit.
   or as text depending on the value. Home now has six real tiles instead of a
   placeholder. Drive's URL normalisation extracted to src/lib/url.ts so the
   javascript:-blocking check exists once, not twice. No migration. Draft PR #6.
-- Still outstanding on Tobechukwu's side: local sign-in test, Vercel access,
-  Drive service account key + folder ID, ANTHROPIC_API_KEY.
+- PR #6 merged. Six of nine phases on main (1,2,3,5,6,9).
+- LOCAL SIGN-IN TEST PASSED. Tobechukwu signed in with Google as
+  tobechukwuudeogu@gmail.com, landed on Home, all six tiles, Admin visible.
+  Earlier failure was a bad anon key in his .env.local, not a code problem.
+  auth.users confirms: first sign-in 11:00, team_members row added 11:03 via
+  the Supabase dashboard, successful sign-in 11:16. So the allow-list rejection
+  path is proven too, not just the happy path.
+- Found and fixed a real bug in my own phase 1 code while verifying that:
+  getCurrentMember used .ilike to match the signed-in email, and ilike reads
+  its right hand side as a pattern, so _ and % in a user's own address were
+  wildcards. Not exploitable on gmail.com addresses, and RLS was unaffected
+  because the helpers use equality, but it is an auth path. Fixed with .eq on
+  a lowercased email plus a check constraint enforcing lowercase storage.
+  That made check_violation ambiguous with the keep-an-admin trigger, so the
+  admin page now distinguishes by constraint name. Draft PR #7.
+- Still outstanding on Tobechukwu's side: Vercel access, Drive service account
+  key + folder ID, ANTHROPIC_API_KEY.
 - Sandbox proxy 403s on the Supabase host, so real sign-in and DB reads cannot
   be tested from here. Local run verifies routing and the auth gate only.
 - Nothing deployed yet, no Vercel project; Tobechukwu has no Vercel access yet.

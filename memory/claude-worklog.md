@@ -31,7 +31,15 @@ session must log itself here and commit.
   handed everything to Tobechukwu and his features are now part of Studio Hub.
 - Google OAuth is configured by Tobechukwu; he is running the local sign-in test.
 - Sent the first screenshots of the app; he had seen nothing until now.
-- PR #3 merged. Phase 5 opened as draft PR #4.
+- PR #3 merged, PR #4 merged. CI confirmed working (green on main and on PRs);
+  it had not fired earlier only because GitHub registers a workflow once the
+  file reaches the default branch, not a disabled repo setting.
+- Phase 6, Pipeline: five stage board, admins create/delete/reassign, editors
+  move and edit only their own cards. Stage picker instead of drag and drop
+  (keyboard and phone friendly). Slack notification on stage change, best
+  effort with a 3s timeout, never blocks the move. Two FKs into team_members
+  disambiguated by constraint name, verified against the live schema. No
+  migration needed. Opened as draft PR #5.
 - Sandbox proxy 403s on the Supabase host, so real sign-in and DB reads cannot
   be tested from here. Local run verifies routing and the auth gate only.
 - Nothing deployed yet, no Vercel project; Tobechukwu has no Vercel access yet.

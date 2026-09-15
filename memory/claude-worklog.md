@@ -39,7 +39,16 @@ session must log itself here and commit.
   (keyboard and phone friendly). Slack notification on stage change, best
   effort with a 3s timeout, never blocks the move. Two FKs into team_members
   disambiguated by constraint name, verified against the live schema. No
-  migration needed. Opened as draft PR #5.
+  migration needed. Merged as PR #5.
+- Phase 9, Libraries + Workflows + Home tiles. Taken out of order because 4, 7
+  and 8 all need credentials only Tobechukwu can supply. Libraries and
+  workflows share one form and row component; each page passes its own server
+  actions so the table name never reaches the browser. Entries render as a link
+  or as text depending on the value. Home now has six real tiles instead of a
+  placeholder. Drive's URL normalisation extracted to src/lib/url.ts so the
+  javascript:-blocking check exists once, not twice. No migration. Draft PR #6.
+- Still outstanding on Tobechukwu's side: local sign-in test, Vercel access,
+  Drive service account key + folder ID, ANTHROPIC_API_KEY.
 - Sandbox proxy 403s on the Supabase host, so real sign-in and DB reads cannot
   be tested from here. Local run verifies routing and the auth gate only.
 - Nothing deployed yet, no Vercel project; Tobechukwu has no Vercel access yet.

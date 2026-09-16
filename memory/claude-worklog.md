@@ -6,6 +6,31 @@ report day (YDAY) and summarizes them under "🤖 Claude sessions". This is how 
 own work gets into the report — past chat sessions cannot be read directly, so each
 session must log itself here and commit.
 
+
+## 2026-09-16
+- Phase 4 Drive uploads built and merged (PR #11). STUDIO HUB IS COMPLETE:
+  all nine phases, eight pages, seven tables, nine migrations, CI green.
+- Uploads go browser -> Google directly via a resumable session, because a
+  serverless request body is capped at a few MB and shoot files are hundreds.
+  The session URL is minted only for a signed-in member, for one named file.
+  Full `drive` scope, not drive.file: a service account only sees what is
+  shared with it, so the sharing is the boundary. Used google-auth-library
+  rather than hand-rolling, because this cannot be tested against the real
+  credentials from the sandbox.
+- Verified the private key \n normalisation with a throwaway RSA keypair:
+  literal \n and real newlines both work, a quoted value correctly fails.
+- Vercel IS connected and deploying (project studio-hub, team-54). Claude had
+  wrongly implied it was not set up; the Vercel MCP connector cannot reach that
+  team (list_projects fails), so Claude cannot read build or runtime logs.
+- UNVERIFIED: no Drive upload has ever succeeded. drive_items has zero rows of
+  type 'upload'. The known risk is that a service account has no Drive storage
+  quota and Google may refuse writes into a folder shared from a personal My
+  Drive. Proper fix would be a Shared Drive, which needs Workspace. Google's
+  own error text is surfaced verbatim in the UI so it is diagnosable.
+- The team is actually using it: 4 members, 4 have signed in, 1 calendar event,
+  1 pipeline card. Up from 1 sign-in yesterday.
+- Still open: confirm the reel metric list with whoever tracks them; extend the
+  Vercel grant to team-54 if Claude is to debug deploys.
 ## 2026-09-15
 - Studio Hub build continued (Tobechukwu, PM, on Shiva's approval).
 - Merged PR #2 (phase 2: Admin page, team member CRUD) into main.
